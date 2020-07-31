@@ -1,4 +1,4 @@
-# Thinkpad T450s Big Sur Bate3
+# Thinkpad T450s Big Sur OpenCore
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
 - 这是一个完整的Thinkpad T450s macOS Big Sur + DW1820a 配置
@@ -6,8 +6,7 @@
 - 默认使用fakeSMC 安装完成后可以替换为virtualSMC 
 - 声卡默认 layout-id = 15 解决耳机杂音问题 但需要手动选择输入/输出设备 
 （内置扬声器+内置麦克风+耳机+耳机麦克风测试正常）
-- 触摸板使用VoodooSMBus + VoodooRMI驱动
-- 触摸屏使用VoodooI2CHID驱动 但它目前不起作用 正在寻找解决方案
+- 触摸板使用VoodooRMI驱动
 ![Pcidevices](./picture/Pcidevices.png)
 ![WIFI](./picture/WIFI.png)
 ![USB](./picture/USB.png)
@@ -45,11 +44,11 @@
 - 声卡
 - USB
 - 电池
+- 触摸屏 
 - 触摸板 
 - 小红点
 - miniDP
 - SD卡读卡器
 
 ## 无效
-- 触摸屏 (正在寻找解决方案)
 - VGA
