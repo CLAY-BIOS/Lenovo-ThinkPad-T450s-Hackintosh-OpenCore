@@ -8,19 +8,11 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-ALS0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Shortcuts</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-BKEY.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -32,27 +24,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Shortcuts Clickpad</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DEH01.aml</string>
+				<string>SSDT-VPS2.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Battery</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DTGP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
+				<string>SSDT-OCBATT.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -64,46 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sound card IRQ patch</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Sound card IRQ patch</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-IPIC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MEM2.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-OCBAT0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Battery</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-OCBATC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Backlight</string>
 				<key>Enabled</key>
 				<true/>
@@ -112,35 +56,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Sound card IRQ patch</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PWRB.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SMBU.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Clickpad</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-Thinkpad_Clickpad.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-UIAC.aml</string>
+				<string>SSDT-HPET-IPIC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -156,7 +76,15 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-DEH01.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Collection</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TEMP.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -165,6 +93,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-ALC3.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBU</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SMBU.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -1390,8 +1326,6 @@
 				<string>Intel Wi-Fi 6 AX200 Beta(802.11ax wireless)</string>
 				<key>name</key>
 				<string>Airport</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -1467,7 +1401,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
 				<key>MaxKernel</key>
@@ -1483,7 +1417,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/FakeSMC</string>
 				<key>MaxKernel</key>
@@ -2518,9 +2452,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>alcid=15  brcmfx-driver=2 vsmcgen=1 brcmfx-country=#a -v</string>
-				<key>booter-fileset-basesystem</key>
-				<data></data>
+				<string>alcid=15 brcmfx-driver=2 vsmcgen=1 brcmfx-country=#a -v</string>
 				<key>booter-fileset-kernel</key>
 				<data></data>
 				<key>csr-active-config</key>
