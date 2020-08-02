@@ -16,11 +16,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>The missing parts</string>
+				<string>Sound card IRQ patch</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-TEMP.aml</string>
+				<string>SSDT-HPET-IPIC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -32,14 +32,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sensor</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Graphics</string>
 				<key>Enabled</key>
 				<true/>
@@ -48,11 +40,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sound card IRQ patch</string>
+				<string>Sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-HPET-IPIC.aml</string>
+				<string>SSDT-ALS0.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -72,6 +64,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>The missing parts</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TEMP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USBX.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>delete EH01</string>
 				<key>Enabled</key>
 				<true/>
@@ -84,7 +92,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USBX.aml</string>
+				<string>SSDT-ALC3.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -1484,6 +1492,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>CodecCommander.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CodecCommander</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
