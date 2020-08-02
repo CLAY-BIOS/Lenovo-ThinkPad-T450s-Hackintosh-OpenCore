@@ -78,6 +78,14 @@
 				<key>Path</key>
 				<string>SSDT-DEH01.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USBX.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
