@@ -1,7 +1,7 @@
-# Thinkpad T450s Big Sur OpenCore
+# ThinkPad T450s Big Sur OpenCore
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
-- 这是一个完整的Thinkpad T450s macOS Big Sur + DW1820a 配置。
+- 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
 - 使用DW1820A安装系统时无需在BIOS中禁用WIFI。
 - 默认使用fakeSMC，安装完成后可以替换为virtualSMC。 
 - 声卡默认 layout-id = 15，解决耳机杂音问题。 
