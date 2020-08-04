@@ -2,8 +2,7 @@
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
-- 使用DW1820A安装系统时无需在BIOS中禁用WIFI。
-- 默认使用fakeSMC，安装完成后可以替换为virtualSMC。 
+- 使用DW1820A安装系统时无需在BIOS中禁用WIFI。 
 - 声卡默认 layout-id = 15，解决耳机杂音问题。 
 - 插入音频设备不会自动切换， 需要手动选择输入/输出设备。 
 - （内置扬声器 + 内置麦克风 + 耳机 + 耳机麦克风测试正常）
