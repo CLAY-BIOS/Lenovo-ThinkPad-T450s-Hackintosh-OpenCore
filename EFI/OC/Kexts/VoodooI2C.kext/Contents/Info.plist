@@ -17,17 +17,17 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.4.3</string>
+	<string>2.4.4</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.4.3</string>
+	<string>2.4.4</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11E146</string>
+	<string>11E503a</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -35,9 +35,9 @@
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
-	<string>1140</string>
+	<string>1141</string>
 	<key>DTXcodeBuild</key>
-	<string>11E146</string>
+	<string>11E503a</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Custom MT2 Personality</key>
@@ -531,6 +531,8 @@
 			<key>IONameMatch</key>
 			<array>
 				<string>pci8086,34e8</string>
+				<string>pci8086,6e8</string>
+				<string>pci8086,6e9</string>
 				<string>pci8086,2e8</string>
 				<string>pci8086,2e9</string>
 				<string>pci8086,9d60</string>
