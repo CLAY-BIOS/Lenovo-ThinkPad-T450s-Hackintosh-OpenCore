@@ -7,6 +7,7 @@
 - 插入音频设备不会自动切换， 需要手动选择输入/输出设备。 
 - （内置扬声器 + 内置麦克风 + 耳机 + 耳机麦克风测试正常）
 - 支持触摸屏 
+
 ![Input/output](./picture/Inputoutput.png)
 ![WIFI](./picture/WIFI.png)
 ## 硬件信息
