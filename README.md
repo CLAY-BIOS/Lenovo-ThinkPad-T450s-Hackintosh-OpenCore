@@ -6,8 +6,6 @@
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 支持触摸屏 
 
-![Input/output](./picture/Inputoutput.png)
-![WIFI](./picture/WIFI.png)
 ## 硬件信息
 
 ```  

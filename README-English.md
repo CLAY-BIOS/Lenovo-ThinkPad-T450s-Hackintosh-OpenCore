@@ -7,8 +7,6 @@
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - Support touch screen
 
-![Input/output](./picture/Inputoutput.png)
-![WIFI](./picture/WIFI.png)
 ## Hardware information
 
 ```  
