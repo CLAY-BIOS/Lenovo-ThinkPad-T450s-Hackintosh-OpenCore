@@ -1,23 +1,24 @@
 # ThinkPad T450s Big Sur OpenCore
 ![Thismachine](./picture/Thismachine.png)
-## 简介
-- 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
-- 使用DW1820A安装系统时无需在BIOS中禁用WIFI。 
-- 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
-- 支持触摸屏 
+## Introduction to the
+
+- This is a full ThinkPad T450s macOS Big Sur + DW1820a configuration.
+- There is no need to disable WIFI in the BIOS when installing a system using DW1820A.
+- Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
+- Support touch screen
 
 ![Input/output](./picture/Inputoutput.png)
 ![WIFI](./picture/WIFI.png)
-## 硬件信息
+## Hardware information
 
 ```  
 - CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
 
-- 核心显卡：Intel HD 5500 Graphics 
+- The core graphics：Intel HD 5500 Graphics 
 
-- 声卡：ALC292
+- sound card：ALC292
 
-- 无线网卡：DW1820A
+- Wireless network card：DW1820A
 ```
 
 ## BIOS (1.37)
@@ -31,22 +32,22 @@
 -  UEFI/Legacy Boot`: **UEFI Only**;
 -  CSM Support`: **Yes**.
 
-## 有效
+## Effective
 - CPU
-- 睡眠/唤醒
+- Sleep/Wake up
 - Wifi
-- 蓝牙 
+- Bluetooth
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store
-- 以太网卡
-- 声卡
+- Ethernet card
+- sound card
 - USB
-- 电池
-- 触摸屏 
-- 触摸板 
-- 小红点
+- The battery
+- touch screen
+- touch pad
+- little red dot
 - miniDP
-- SD卡读卡器
+- SD card reader
 
-## 无效
+## Invalid
 - VGA

@@ -64,35 +64,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Parts collection</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TEMP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Comprehensive patch collection</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PTSWAK.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Shortcuts Clickpad</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-VPS2.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Sensor</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMBU</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SMBU.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>The missing parts</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-TEMP.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -1038,6 +1030,174 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,0,0</string>
+				<key>device_type</key>
+				<string>Host Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell-U Host Bridge -OPI</string>
+				<key>name</key>
+				<string>PCI Express Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>AAg0</data>
+				<key>AAPL,current-extra</key>
+				<data>AAiY</data>
+				<key>AAPL,current-extra-in-sleep</key>
+				<data>AAZA</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>AAPo</data>
+				<key>AAPL,device-internal</key>
+				<data>Ag==</data>
+				<key>AAPL,max-port-current-in-sleep</key>
+				<data>AAg0</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,0</string>
+				<key>device-id</key>
+				<data>nLEAAA==</data>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP USB xHCI Controller</string>
+				<key>name</key>
+				<string>USB 3.1 Controller</string>
+				<key>vendor-id</key>
+				<data>gIYAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,22,0</string>
+				<key>device_type</key>
+				<string>Communication Controller</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP MEI Controller #1</string>
+				<key>name</key>
+				<string>Intel MEI Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,25,0</string>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>Intel Ethernet Connection (3) I218-LM</string>
+				<key>name</key>
+				<string>Gigabit Ethernet Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #6</string>
+				<key>name</key>
+				<string>PCI Express Root Bridge #6</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0</string>
+				<key>device_type</key>
+				<string>Card Reader</string>
+				<key>model</key>
+				<string>Realtek RTS5227 PCI Express Card Reader</string>
+				<key>name</key>
+				<string>Apple Memory Card Reader</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,1</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #3</string>
+				<key>name</key>
+				<string>PCI Express Root Bridge #3</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,43a3</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>model2</key>
+				<string>Intel Wi-Fi 6 AX200 Beta(802.11ax wireless)</string>
+				<key>name</key>
+				<string>Airport</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,0</string>
+				<key>device_type</key>
+				<string>ISA Bridge</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP LPC Controller (Low Pin Count Bus)</string>
+				<key>name</key>
+				<string>Apple LPC Bus</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,2</string>
+				<key>device_type</key>
+				<string>SATA Controller</string>
+				<key>model</key>
+				<string>Intel Broadwell Wildcat Point-LP SATA Controller [AHCI Mode]</string>
+				<key>name</key>
+				<string>SATA Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>SMC Bus Controller</string>
+				<key>model</key>
+				<string>Intel Wildcat Point-LP SMC Bus Controller</string>
+				<key>name</key>
+				<string>SMC Bus Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>AAg0</data>
+				<key>AAPL,current-extra</key>
+				<data>AAiY</data>
+				<key>AAPL,current-extra-in-sleep</key>
+				<data>AAZA</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>AAPo</data>
+				<key>AAPL,device-internal</key>
+				<data>Ag==</data>
+				<key>AAPL,max-port-current-in-sleep</key>
+				<data>AAg0</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,29,0</string>
+				<key>device-id</key>
+				<data>ppwAAA==</data>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Intel 9 Series Chipset Family Wildcat Point-LP Enhanced USB 2.0 EHCI Controller</string>
+				<key>name</key>
+				<string>USB 2.0 Controller</string>
+				<key>vendor-id</key>
+				<data>gIYAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,GfxYTile</key>
@@ -1079,173 +1239,27 @@
 				<key>model</key>
 				<string>Intel HD Graphics 5500</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>SMC Bus Controller</string>
-				<key>model</key>
-				<string>Intel Wildcat Point-LP SMC Bus Controller</string>
-				<key>name</key>
-				<string>SMC Bus Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>SATA Controller</string>
-				<key>model</key>
-				<string>Intel Broadwell Wildcat Point-LP SATA Controller [AHCI Mode]</string>
-				<key>name</key>
-				<string>SATA Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>ISA Bridge</string>
-				<key>model</key>
-				<string>Intel Broadwell Wildcat Point-LP LPC Controller (Low Pin Count Bus)</string>
-				<key>name</key>
-				<string>Apple LPC Bus</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x1)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>PCI Bridge</string>
-				<key>model</key>
-				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #3</string>
-				<key>name</key>
-				<string>PCI Express Root Bridge #3</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Slot-5</string>
-				<key>device_type</key>
-				<string>Card Reader</string>
-				<key>model</key>
-				<string>Realtek RTS5227 PCI Express Card Reader</string>
-				<key>name</key>
-				<string>Apple Memory Card Reader</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>PCI Bridge</string>
-				<key>model</key>
-				<string>Intel Broadwell Wildcat Point-LP PCI Express Root Port #6</string>
-				<key>name</key>
-				<string>PCI Express Root Bridge #6</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Ethernet Controller</string>
-				<key>model</key>
-				<string>Intel Gigabit Local Area Network Ethernet Connection (3) I218-LM</string>
-				<key>name</key>
-				<string>Gigabit Ethernet Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Communication Controller</string>
-				<key>model</key>
-				<string>Intel Broadwell Wildcat Point-LP MEI Controller</string>
-				<key>name</key>
-				<string>Intel MEI Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Host Bridge</string>
-				<key>model</key>
-				<string>Intel Broadwell-U PCI Express Main Host Bridge OPI</string>
-				<key>name</key>
-				<string>PCI Express Bridge</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
-			<dict>
-				<key>AAPL,current-available</key>
-				<data>AAg0</data>
-				<key>AAPL,current-extra</key>
-				<data>AAiY</data>
-				<key>AAPL,current-extra-in-sleep</key>
-				<data>AAZA</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>AAPo</data>
-				<key>AAPL,device-internal</key>
-				<data>Ag==</data>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<data>AAg0</data>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device-id</key>
-				<data>ppwAAA==</data>
-				<key>device_type</key>
-				<string>USB Controller</string>
-				<key>model</key>
-				<string>Intel 9 Series Chipset Family Wildcat Point-LP Enhanced USB 2.0 EHCI Controller</string>
-				<key>name</key>
-				<string>USB 2.0 Controller</string>
-				<key>vendor-id</key>
-				<data>gIYAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>AAPL,current-available</key>
-				<data>AAg0</data>
-				<key>AAPL,current-extra</key>
-				<data>AAiY</data>
-				<key>AAPL,current-extra-in-sleep</key>
-				<data>AAZA</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>AAPo</data>
-				<key>AAPL,device-internal</key>
-				<data>Ag==</data>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<data>AAg0</data>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device-id</key>
-				<data>nLEAAA==</data>
-				<key>device_type</key>
-				<string>USB Controller</string>
-				<key>model</key>
-				<string>Intel 9 Series Chipset Family Wildcat Point-LP USB 3.1 xHCI Controller</string>
-				<key>name</key>
-				<string>USB 3.1 Controller</string>
-				<key>vendor-id</key>
-				<data>gIYAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>WLAN</string>
+				<string>Internal@0,3,0</string>
 				<key>compatible</key>
-				<string>pci14e4,43a3</string>
+				<string>pci8086,160c</string>
 				<key>device_type</key>
-				<string>Airport Extreme</string>
+				<string>Audio device</string>
 				<key>model</key>
-				<string>Dell DW1820A (BCM4350) 802.11ac wireless</string>
-				<key>model2</key>
-				<string>Intel Wi-Fi 6 AX200 Beta(802.11ax wireless)</string>
-				<key>name</key>
-				<string>Airport</string>
+				<string>Intel Broadwell-U Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,27,0</string>
+				<key>compatible</key>
+				<string>pci8086,9ca0</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>model</key>
+				<string>Intel Wildcat Point-LP High Definition Audio Controller</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1289,13 +1303,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>RTCMemoryFixup.kext</string>
+				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RTCMemoryFixup</string>
+				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1481,13 +1495,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>AppleALC.kext</string>
+				<string>RTCMemoryFixup.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AppleALC</string>
+				<string>Contents/MacOS/RTCMemoryFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1783,6 +1797,22 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>CodecCommander.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CodecCommander</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -2063,7 +2093,7 @@
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>boot-args</key>
-				<string>alcid=15 brcmfx-driver=2 vsmcgen=1 brcmfx-country=#a -v</string>
+				<string>alcid=32 brcmfx-driver=2 vsmcgen=1 brcmfx-country=#a -v</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
