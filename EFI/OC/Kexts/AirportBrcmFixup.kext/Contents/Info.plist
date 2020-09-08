@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.8</string>
+	<string>2.0.9</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.0.8</string>
+	<string>2.0.9</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -103,10 +103,6 @@
 	<dict>
 		<key>as.vit9696.Lilu</key>
 		<string>1.2.6</string>
-		<key>com.apple.driver.corecapture</key>
-		<string>1.0.0</string>
-		<key>com.apple.iokit.IONetworkingFamily</key>
-		<string>1.5</string>
 		<key>com.apple.iokit.IOPCIFamily</key>
 		<string>2.7</string>
 		<key>com.apple.kpi.bsd</key>

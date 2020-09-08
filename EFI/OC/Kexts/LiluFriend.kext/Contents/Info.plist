@@ -64,20 +64,6 @@
 	<string>Copyright © 2017 Vanilla. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>as.lvs1974.AirportBrcmFixup</key>
-		<string>1.0</string>
-		<key>as.lvs1974.BT4LEContinuityFixup</key>
-		<string>1.0</string>
-		<key>as.vit9696.AppleALC</key>
-		<string>1.0</string>
-		<key>as.vit9696.Lilu</key>
-		<string>1.2.0</string>
-		<key>as.vit9696.SMCProcessor</key>
-		<string>1.0</string>
-		<key>as.vit9696.VirtualSMC</key>
-		<string>1.0</string>
-		<key>as.vit9696.WhateverGreen</key>
-		<string>1.0</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>12.0.0</string>
 		<key>com.apple.kpi.iokit</key>
@@ -88,14 +74,6 @@
 		<string>12.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
 		<string>12.0.0</string>
-		<key>org.vanilla.driver.CPUFriend</key>
-		<string>1.0</string>
-		<key>ru.joedm.SMCSuperIO</key>
-		<string>1.0</string>
-		<key>ru.usrsse2.SMCBatteryManager</key>
-		<string>1.0.0</string>
-		<key>ru.usrsse2.SMCLightSensor</key>
-		<string>1</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Root</string>
