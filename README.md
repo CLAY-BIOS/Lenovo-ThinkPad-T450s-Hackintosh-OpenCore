@@ -1,4 +1,4 @@
-# ThinkPad T450s Big Sur OpenCore 6.1
+# ThinkPad T450s Big Sur OpenCore 0.6.1
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
