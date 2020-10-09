@@ -1,10 +1,11 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.1
+# ThinkPad T450s Big Sur OpenCore 0.6.2
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
 - 使用DW1820A安装系统时无需在BIOS中禁用WIFI。 
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 支持触摸屏 
+- 支持Catalina
 - (PS:如果不想ACPI补丁在其它系统中生效，请在opencore configurator 偏好设置中将版本改成MOD分支版然后保存即可。)
 
 ## 硬件信息
