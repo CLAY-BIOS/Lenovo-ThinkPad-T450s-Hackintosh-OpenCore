@@ -6,6 +6,7 @@
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 支持触摸屏 
 - 支持Catalina
+- 支持ThinkPad X250
 - (PS:如果不想ACPI补丁在其它系统中生效，请在opencore configurator 偏好设置中将版本改成MOD分支版然后保存即可。)
 
 ## 硬件信息
