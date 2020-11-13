@@ -1,14 +1,12 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.2
+# ThinkPad T450s Big Sur OpenCore 0.6.3
 ![Thismachine](./picture/Thismachine.png)
 ## Introduction to the
 
 - This is a full ThinkPad T450s macOS Big Sur + DW1820a configuration.
-- There is no need to disable WIFI in the BIOS when installing a system using DW1820A.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - Support touch screen
 - support Catalina
 - support ThinkPad X250
-- (PS: If you don't want the ACPI patch to work on other systems, please change the version to a MOD branch in the Opencore Configurator preferences and save it.)
 
 ## Hardware information
 
