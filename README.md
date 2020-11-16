@@ -17,6 +17,7 @@
 - F9：打开系统偏好设置
 - F12：打开启动板
 - FN + Space：切换键盘背光
+
 ![demo](./picture/demo.gif)
 
 ## 硬件信息

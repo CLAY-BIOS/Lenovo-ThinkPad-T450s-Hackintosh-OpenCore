@@ -19,6 +19,7 @@
 - F9: Open System Preferences
 - F12: Open Launchpad
 - FN+Space: Toggle Keyboard Backlight
+
 ![demo](./picture/demo.gif)
 
 ## Hardware information
