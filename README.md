@@ -6,6 +6,18 @@
 - 支持触摸屏 
 - 支持Catalina
 - 支持ThinkPad X250
+# ThinkPad助手(ThinkpadAssistant)
+- 可让您在Thinkpad T450s笔记本电脑上使用所有功能键 (X250请自行测试)
+- 复制ThinkpadAssistant到应用程序文件夹
+- 启动ThinkpadAssistant，并在菜单栏中勾选“登录时启动”
+- F4：麦克风静音/取消静音（带有状态LED指示）
+- F7：屏幕镜像/屏幕扩展
+- F8：启用/停用Wi-Fi
+- 左Shift + F8键：启用/停用蓝牙
+- F9：打开系统偏好设置
+- F12：打开启动板
+- FN + Space：切换键盘背光
+![demo](./picture/demo.gif)
 
 ## 硬件信息
 
