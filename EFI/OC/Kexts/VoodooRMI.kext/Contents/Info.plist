@@ -3,64 +3,89 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19F101</string>
+	<string>20A5384c</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>VoodooInput</string>
+	<string>VoodooRMI</string>
 	<key>CFBundleIdentifier</key>
-	<string>me.kishorprins.VoodooInput</string>
+	<string>com.1Revenger1.VoodooRMI</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>VoodooInput</string>
+	<string>VoodooRMI</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.8</string>
+	<string>1.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.8</string>
+	<string>1.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11E708</string>
+	<string>12A8179i</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>19G68</string>
+	<string>20A5343f</string>
 	<key>DTSDKName</key>
-	<string>macosx10.15</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>1160</string>
+	<string>1200</string>
 	<key>DTXcodeBuild</key>
-	<string>11E708</string>
+	<string>12A8179i</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>Voodoo Input</key>
+		<key>RMIDevice</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>me.kishorprins.VoodooInput</string>
+			<string>com.1Revenger1.VoodooRMI</string>
+			<key>Configuration</key>
+			<dict>
+				<key>DisableWhileTrackpointTimeout </key>
+				<integer>100</integer>
+				<key>DisableWhileTypingTimeout</key>
+				<integer>100</integer>
+				<key>ForceTouchEmulation</key>
+				<true/>
+				<key>ForceTouchMinPressure</key>
+				<integer>90</integer>
+				<key>MinYDiffThumbDetection</key>
+				<integer>200</integer>
+				<key>TrackpointDeadzone</key>
+				<integer>1</integer>
+				<key>TrackpointMultiplier</key>
+				<integer>10</integer>
+				<key>TrackpointScrollMultiplierX</key>
+				<integer>30</integer>
+				<key>TrackpointScrollMultiplierY</key>
+				<integer>30</integer>
+			</dict>
 			<key>IOClass</key>
-			<string>VoodooInput</string>
+			<string>RMIBus</string>
 			<key>IOProbeScore</key>
-			<integer>200</integer>
+			<integer>2910</integer>
 			<key>IOPropertyMatch</key>
 			<dict>
-				<key>VoodooInputSupported</key>
+				<key>RMI4 Supported</key>
 				<true/>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>IOService</string>
+			<string>RMITransport</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019 Kishor Prins. All rights reserved.</string>
+	<string>Copyright © 2020 1Revenger1. All rights reserved.</string>
+	<key>OSBundleCompatibleVersion</key>
+	<string>1.0.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOHIDFamily</key>
@@ -73,6 +98,6 @@
 		<string>13.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Root</string>
+	<string>Console</string>
 </dict>
 </plist>

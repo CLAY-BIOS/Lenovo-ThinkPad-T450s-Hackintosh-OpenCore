@@ -3,76 +3,84 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19F101</string>
+	<string>20A5384c</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>VoodooInput</string>
+	<string>RMII2C</string>
 	<key>CFBundleIdentifier</key>
-	<string>me.kishorprins.VoodooInput</string>
+	<string>com.1Revenger1.RMII2C</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>VoodooInput</string>
+	<string>RMII2C</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.8</string>
+	<string>1.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.8</string>
+	<string>1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11E708</string>
+	<string>12A8179i</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>19G68</string>
+	<string>20A5343f</string>
 	<key>DTSDKName</key>
-	<string>macosx10.15</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>1160</string>
+	<string>1200</string>
 	<key>DTXcodeBuild</key>
-	<string>11E708</string>
+	<string>12A8179i</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>Voodoo Input</key>
+		<key>RMII2C</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>me.kishorprins.VoodooInput</string>
+			<string>com.1Revenger1.RMII2C</string>
 			<key>IOClass</key>
-			<string>VoodooInput</string>
+			<string>RMII2C</string>
 			<key>IOProbeScore</key>
-			<integer>200</integer>
+			<integer>500</integer>
 			<key>IOPropertyMatch</key>
-			<dict>
-				<key>VoodooInputSupported</key>
-				<true/>
-			</dict>
+			<array>
+				<dict>
+					<key>compatible</key>
+					<string>PNP0C50</string>
+				</dict>
+			</array>
 			<key>IOProviderClass</key>
-			<string>IOService</string>
+			<string>VoodooI2CDeviceNub</string>
+			<key>Legacy</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019 Kishor Prins. All rights reserved.</string>
+	<string>Copyright © 2020 1Revenger1. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>com.1Revenger1.VoodooRMI</key>
+		<string>1.0</string>
+		<key>com.alexandred.VoodooI2C</key>
+		<string>2.5</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>2.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>14</string>
+		<string>18.5</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>14</string>
+		<string>18.5</string>
 		<key>com.apple.kpi.mach</key>
-		<string>13.0</string>
+		<string>18.5</string>
 	</dict>
-	<key>OSBundleRequired</key>
-	<string>Root</string>
 </dict>
 </plist>
