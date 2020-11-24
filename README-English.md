@@ -9,17 +9,19 @@
 - support ThinkPad X250
 
 # ThinkPad Assistant 
-- Allows you to use all function keys on Thinkpad T450s laptop (test the X250 yourself)
-- Copy the ThinkpadAssistant into the Application folder
-- Start ThinkpadAssistant and check "Start when logged in" in the menu bar
-- F4: Mute / Unmute Microphone (with Status LED indication)
-- F7: Screen mirroring / Screen extending
-- F8: Activate / Deactivate Wi-Fi
-- Left Shift+F8: Activate / Deactivate Bluetooth
-- F9: Open System Preferences
-- F12: Open Launchpad
-- FN+Space: Toggle Keyboard Backlight
-
+- Allows you to use all function keys on Thinkpad T450s laptop (test the X250 yourself).
+- Copy the ThinkpadAssistant into the Application folder.
+- Start ThinkpadAssistant and check "Start when logged in" in the menu bar.
+- F4: Mute / Unmute Microphone (with Status LED indication).
+- F7: Screen mirroring / Screen extending.
+- F8: Activate / Deactivate Wi-Fi.
+- Left Shift+F8: Activate / Deactivate Bluetooth.
+- F9: Open System Preferences.
+- F12: Open Launchpad.
+- FN+Space: Toggle Keyboard Backlight.
+- FN + 4: Sleep shortcut (press the sleep shortcut again during sleep to terminate sleep).
+- PrtSc maps to F13: this can be set as screenshot in system preferences -> keyboard -> shortcut.
+-----------------------------------------------------------------------------------------------------------------
 ![demo](./picture/demo.gif)
 
 ## Hardware information
