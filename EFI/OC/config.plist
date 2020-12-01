@@ -132,32 +132,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>(GBIX,3,N) ---&gt; XBIX Battery</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>R0JJWAM=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WEJJWAM=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>(GBST,4,N) ---&gt; XBST Battery</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -173,6 +147,32 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WEJTVAQ=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>(GBIX,3,N) ---&gt; XBIX Battery</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>R0JJWAM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WEJJWAM=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -329,6 +329,32 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WEpUUAM=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PNLF to XNLF</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>UE5MRg==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WE5MRg==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -786,7 +812,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>WEhDSQ==</data>
 				<key>Limit</key>
@@ -1354,7 +1380,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>WNTF to XXXX</string>
+				<string>WNTF to XNTF</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1368,7 +1394,7 @@
 				<key>OemTableId</key>
 				<data>AAAAAAAAAAA=</data>
 				<key>Replace</key>
-				<data>WFhYWA==</data>
+				<data>WE5URg==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -1380,7 +1406,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>WXPF to YYYY</string>
+				<string>WXPF to XXPF</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1394,7 +1420,7 @@
 				<key>OemTableId</key>
 				<data>AAAAAAAAAAA=</data>
 				<key>Replace</key>
-				<data>WVlZWQ==</data>
+				<data>WFhQRg==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -1891,6 +1917,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBInjectAll</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ACPIBatteryManager.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ACPIBatteryManager</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>

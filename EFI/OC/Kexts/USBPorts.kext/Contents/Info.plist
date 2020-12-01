@@ -22,14 +22,14 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro12,1-XHCI</key>
+		<key>MacBookPro12,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
-			<string>XHCI</string>
+			<string>XHC</string>
 			<key>IOPCIPrimaryMatch</key>
 			<string>0x9cb18086</string>
 			<key>IOProbeScore</key>

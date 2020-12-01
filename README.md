@@ -3,11 +3,24 @@
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
-- 支持触摸屏 
-- 支持Catalina
-- 支持ThinkPad X250
+- 支持触摸屏（带有多点触控和触屏手势）。
+- 支持 Catalina。
+- 支持 ThinkPad X250 ThinkPad T450。
+
+## 硬件信息
+
+```  
+- CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
+
+- 核心显卡：Intel HD 5500 Graphics 
+
+- 声卡：ALC292
+
+- 无线网卡：DW1820A
+```
+
 # ThinkPad助手(ThinkpadAssistant)
-- 可让您在Thinkpad T450s笔记本电脑上使用所有功能键 (X250请自行测试)。
+- 可让您在Thinkpad T450s X250 T450笔记本电脑上使用所有功能键。
 - 复制ThinkpadAssistant到应用程序文件夹。
 - 启动ThinkpadAssistant，并在菜单栏中勾选“登录时启动”。
 - F4：麦克风静音/取消静音（带有状态LED指示）。
@@ -21,18 +34,6 @@
 - PrtSc 映射到 F13：可在系统偏好设置-->键盘-->快捷键将它设置为截图。
 -------------------------------------------------------------------------------------------------------------
 ![demo](./picture/demo.gif)
-
-## 硬件信息
-
-```  
-- CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
-
-- 核心显卡：Intel HD 5500 Graphics 
-
-- 声卡：ALC292
-
-- 无线网卡：DW1820A
-```
 
 ## BIOS (1.37)
 -  Security -> Security Chip`: **Disabled**;

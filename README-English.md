@@ -4,12 +4,24 @@
 
 - This is a full ThinkPad T450s macOS Big Sur + DW1820a configuration.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
-- Support touch screen
-- support Catalina
-- support ThinkPad X250
+- Support touch screen (With multi-touch and touchscreen gestures).
+- support Catalina.
+- support ThinkPad X250 ThinkPad T450.
+
+## Hardware information
+
+```  
+- CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
+
+- The core graphics：Intel HD 5500 Graphics 
+
+- sound card：ALC292
+
+- Wireless network card：DW1820A
+```
 
 # ThinkPad Assistant 
-- Allows you to use all function keys on Thinkpad T450s laptop (test the X250 yourself).
+- Allows you to use all function keys on Thinkpad T450s X250 T450 laptop.
 - Copy the ThinkpadAssistant into the Application folder.
 - Start ThinkpadAssistant and check "Start when logged in" in the menu bar.
 - F4: Mute / Unmute Microphone (with Status LED indication).
@@ -23,18 +35,6 @@
 - PrtSc maps to F13: this can be set as screenshot in system preferences -> keyboard -> shortcut.
 -----------------------------------------------------------------------------------------------------------------
 ![demo](./picture/demo.gif)
-
-## Hardware information
-
-```  
-- CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
-
-- The core graphics：Intel HD 5500 Graphics 
-
-- sound card：ALC292
-
-- Wireless network card：DW1820A
-```
 
 ## BIOS (1.37)
 -  Security -> Security Chip`: **Disabled**;
