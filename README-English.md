@@ -1,4 +1,4 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.3
+# ThinkPad T450s Big Sur OpenCore 0.6.4
 ![Thismachine](./picture/Thismachine.png)
 ## Introduction to the
 
@@ -31,7 +31,9 @@
 - F9: Open System Preferences.
 - F12: Open Launchpad.
 - FN+Space: Toggle Keyboard Backlight.
-- FN + 4: Sleep shortcut (press the sleep shortcut again during sleep to terminate sleep).
+- FN + 4: Sleep shortcut.
+  (press the sleep shortcut again during sleep to terminate sleep).
+  (When an external monitor is connected, after pressing the sleep button, the working screen changes to an external monitor (the internal screen is turned off); pressing the sleep button again, the internal and external monitors return to normal.)
 - PrtSc maps to F13: this can be set as screenshot in system preferences -> keyboard -> shortcut.
 -----------------------------------------------------------------------------------------------------------------
 ![demo](./picture/demo.gif)
