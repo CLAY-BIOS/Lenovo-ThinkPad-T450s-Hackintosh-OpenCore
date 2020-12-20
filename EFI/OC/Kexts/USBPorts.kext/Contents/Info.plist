@@ -52,98 +52,12 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>HS04</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>name</key>
-						<string>HS04</string>
-						<key>port</key>
-						<data>
-						BAAAAA==
-						</data>
-					</dict>
-					<key>HS05</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>name</key>
-						<string>HS05</string>
-						<key>port</key>
-						<data>
-						BQAAAA==
-						</data>
-					</dict>
-					<key>HS06</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>name</key>
-						<string>HS06</string>
-						<key>port</key>
-						<data>
-						BgAAAA==
-						</data>
-					</dict>
-					<key>HS07</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>name</key>
-						<string>HS07</string>
-						<key>port</key>
-						<data>
-						BwAAAA==
-						</data>
-					</dict>
-					<key>HS08</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>255</integer>
-						<key>name</key>
-						<string>HS08</string>
-						<key>port</key>
-						<data>
-						CAAAAA==
-						</data>
-					</dict>
-					<key>HS09</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>HS09</string>
-						<key>port</key>
-						<data>
-						CQAAAA==
-						</data>
-					</dict>
-					<key>HS10</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>HS10</string>
-						<key>port</key>
-						<data>
-						CgAAAA==
-						</data>
-					</dict>
-					<key>HS11</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>HS11</string>
-						<key>port</key>
-						<data>
-						CwAAAA==
-						</data>
-					</dict>
 					<key>HSP0</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HSP0</string>
 						<key>port</key>
@@ -153,8 +67,10 @@
 					</dict>
 					<key>HSP1</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HSP1</string>
 						<key>port</key>
@@ -164,8 +80,10 @@
 					</dict>
 					<key>HSP2</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HSP2</string>
 						<key>port</key>
@@ -173,19 +91,75 @@
 						AwAAAA==
 						</data>
 					</dict>
-					<key>SS04</key>
+					<key>HSP3</key>
 					<dict>
+						<key>Comment</key>
+						<string>4G The network card</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
-						<string>SS04</string>
+						<string>HSP3</string>
 						<key>port</key>
 						<data>
-						DwAAAA==
+						BAAAAA==
+						</data>
+					</dict>
+					<key>HSP4</key>
+					<dict>
+						<key>Comment</key>
+						<string>Touch screen</string>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>name</key>
+						<string>HSP4</string>
+						<key>port</key>
+						<data>
+						BQAAAA==
+						</data>
+					</dict>
+					<key>HSP5</key>
+					<dict>
+						<key>Comment</key>
+						<string>IOUSBHostDevice</string>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>name</key>
+						<string>HSP5</string>
+						<key>port</key>
+						<data>
+						BgAAAA==
+						</data>
+					</dict>
+					<key>HSP6</key>
+					<dict>
+						<key>Comment</key>
+						<string>Bluetooth</string>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>name</key>
+						<string>HSP6</string>
+						<key>port</key>
+						<data>
+						BwAAAA==
+						</data>
+					</dict>
+					<key>HSP7</key>
+					<dict>
+						<key>Comment</key>
+						<string>Camera</string>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>name</key>
+						<string>HSP7</string>
+						<key>port</key>
+						<data>
+						CAAAAA==
 						</data>
 					</dict>
 					<key>SSP0</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -197,6 +171,8 @@
 					</dict>
 					<key>SSP1</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -208,6 +184,8 @@
 					</dict>
 					<key>SSP2</key>
 					<dict>
+						<key>Comment</key>
+						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -215,6 +193,19 @@
 						<key>port</key>
 						<data>
 						DgAAAA==
+						</data>
+					</dict>
+					<key>SSP3</key>
+					<dict>
+						<key>Comment</key>
+						<string>Card reader</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>SSP3</string>
+						<key>port</key>
+						<data>
+						DwAAAA==
 						</data>
 					</dict>
 				</dict>
