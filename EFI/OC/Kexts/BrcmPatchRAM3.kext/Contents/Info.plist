@@ -40,6 +40,27 @@
 	<string>11E708</string>
 	<key>IOKitPersonalities</key>
 	<dict>
+		<key>0a5c_f007</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>as.acidanthera.BrcmPatchRAM3</string>
+			<key>DisplayName</key>
+			<string>BCM43142 Bluetooth 4.0 +HS USB Device</string>
+			<key>FirmwareKey</key>
+			<string>BCM43142A0_001.001.011.0197.0218_v4314</string>
+			<key>IOClass</key>
+			<string>BrcmPatchRAM3</string>
+			<key>IOMatchCategory</key>
+			<string>BrcmPatchRAM3</string>
+			<key>IOProbeScore</key>
+			<integer>4000</integer>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>idProduct</key>
+			<integer>8659</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
+		</dict>
 		<key>0489_e032</key>
 		<dict>
 			<key>CFBundleIdentifier</key>

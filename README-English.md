@@ -68,3 +68,4 @@
 
 ## Invalid
 - VGA
+- The fingerprint

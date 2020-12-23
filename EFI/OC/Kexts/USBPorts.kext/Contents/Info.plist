@@ -94,7 +94,7 @@
 					<key>HSP3</key>
 					<dict>
 						<key>Comment</key>
-						<string>4G The network card</string>
+						<string>4G The Network Card</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
@@ -107,7 +107,7 @@
 					<key>HSP4</key>
 					<dict>
 						<key>Comment</key>
-						<string>Touch screen</string>
+						<string>Touch Screen</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
@@ -198,7 +198,7 @@
 					<key>SSP3</key>
 					<dict>
 						<key>Comment</key>
-						<string>Card reader</string>
+						<string>Card Reader</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
