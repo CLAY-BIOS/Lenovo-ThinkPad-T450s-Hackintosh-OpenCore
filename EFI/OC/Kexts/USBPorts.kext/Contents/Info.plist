@@ -120,7 +120,7 @@
 					<key>HSP5</key>
 					<dict>
 						<key>Comment</key>
-						<string>IOUSBHostDevice</string>
+						<string>Fingerprint Reader</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
@@ -146,7 +146,7 @@
 					<key>HSP7</key>
 					<dict>
 						<key>Comment</key>
-						<string>Camera</string>
+						<string>Integrated Camera</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
