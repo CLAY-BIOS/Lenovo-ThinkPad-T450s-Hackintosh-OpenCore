@@ -57,7 +57,7 @@
 						<key>Comment</key>
 						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>HSP0</string>
 						<key>port</key>
@@ -70,7 +70,7 @@
 						<key>Comment</key>
 						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>HSP1</string>
 						<key>port</key>
@@ -83,7 +83,7 @@
 						<key>Comment</key>
 						<string>USB 2.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>HSP2</string>
 						<key>port</key>
