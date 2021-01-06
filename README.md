@@ -1,4 +1,4 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.4
+# ThinkPad T450s Big Sur OpenCore 0.6.5
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
@@ -16,7 +16,7 @@
 
 - 声卡：ALC292
 
-- 无线网卡：DW1820A
+- 无线网卡：DW1820A   
 ```
 
 # ThinkPad助手(ThinkpadAssistant)
