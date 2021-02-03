@@ -44,7 +44,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-XHC-T450S.aml</string>
+				<string>SSDT-XHCI-T450S.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -64,11 +64,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>delete EH01</string>
+				<string>Delete EH01</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DEH01.aml</string>
+				<string>SSDT-EHC1_OFF.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -630,7 +630,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>WEhDSQ==</data>
 				<key>Limit</key>
@@ -656,7 +656,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>RUhDMQ==</data>
 				<key>Limit</key>
@@ -719,6 +719,32 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WldBSwE=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_TTS to ZTTS(1,N)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1RUUwE=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WlRUUwE=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -820,7 +846,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data></data>
 				<key>Replace</key>
 				<data>WFExNA==</data>
 				<key>ReplaceMask</key>
@@ -846,7 +872,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data></data>
 				<key>Replace</key>
 				<data>WFExNQ==</data>
 				<key>ReplaceMask</key>
@@ -1158,7 +1184,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data></data>
 				<key>Replace</key>
 				<data>WE5URg==</data>
 				<key>ReplaceMask</key>
@@ -1184,7 +1210,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data></data>
 				<key>Replace</key>
 				<data>WFhQRg==</data>
 				<key>ReplaceMask</key>
@@ -1198,7 +1224,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_UPC to XUPC(all)</string>
+				<string>_UPC to XUPC</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -1210,9 +1236,61 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
+				<data></data>
 				<key>Replace</key>
 				<data>WFVQQw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>OSIF to XSIF</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>T1NJRg==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFNJRg==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_OSI to XOSI</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -1357,13 +1435,13 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,28,0/0,0</string>
 				<key>compatible</key>
-				<data>AAAODFIn</data>
+				<string>pci10ec,522a</string>
 				<key>device_type</key>
 				<string>Card Reader</string>
 				<key>model</key>
 				<string>Realtek RTS5227 PCI Express Card Reader</string>
 				<key>name</key>
-				<string>Apple Memory Card Reader</string>
+				<string>PCI Express Card Reader</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)</key>
 			<dict>
@@ -1382,6 +1460,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
+				<key>brcmfx-aspm</key>
+				<integer>0</integer>
 				<key>brcmfx-country</key>
 				<string>#a</string>
 				<key>compatible</key>
@@ -1518,7 +1598,7 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>layout-id</key>
-				<data>IAAAAA==</data>
+				<integer>32</integer>
 				<key>model</key>
 				<string>Realtek ALC292</string>
 			</dict>
@@ -1768,24 +1848,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>Sinetek-rtsx.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/Sinetek-rtsx</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>CtlnaAHCIPort.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -1937,6 +1999,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>Sinetek-rtsx.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/Sinetek-rtsx</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -2365,6 +2445,8 @@
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<true/>
 			<key>XhciPortLimit</key>
@@ -2392,8 +2474,12 @@
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
@@ -2475,8 +2561,6 @@
 			<false/>
 			<key>BlacklistAppleUpdate</key>
 			<false/>
-			<key>BootProtect</key>
-			<string>None</string>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -2593,7 +2677,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v</string>
+				<string>-v </string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>booter-fileset-kernel</key>
@@ -2663,6 +2747,8 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
 			<string>C025297004NGDVVJA</string>
 			<key>ProcessorType</key>
@@ -2688,6 +2774,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -2719,7 +2807,7 @@
 			<key>MinimumVolume</key>
 			<integer>50</integer>
 			<key>PlayChime</key>
-			<string></string>
+			<string>Auto</string>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
@@ -2823,6 +2911,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>

@@ -22,14 +22,14 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro12,1-XHC</key>
+		<key>MacBookPro12,1-XHCI</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
-			<string>XHC</string>
+			<string>XHCI</string>
 			<key>IOPCIPrimaryMatch</key>
 			<string>0x9cb18086</string>
 			<key>IOProbeScore</key>
@@ -161,7 +161,7 @@
 						<key>Comment</key>
 						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>SSP0</string>
 						<key>port</key>
@@ -174,7 +174,7 @@
 						<key>Comment</key>
 						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>SSP1</string>
 						<key>port</key>
@@ -187,7 +187,7 @@
 						<key>Comment</key>
 						<string>USB 3.0 Device</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>SSP2</string>
 						<key>port</key>
@@ -198,9 +198,9 @@
 					<key>SSP3</key>
 					<dict>
 						<key>Comment</key>
-						<string>Card Reader</string>
+						<string>Smart Card</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>SSP3</string>
 						<key>port</key>

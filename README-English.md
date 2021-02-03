@@ -1,4 +1,4 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.5
+# ThinkPad T450s Big Sur OpenCore 0.6.6
 ![Thismachine](./picture/Thismachine.png)
 ## Introduction to the
 
