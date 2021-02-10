@@ -4,10 +4,11 @@
 
 - This is a full ThinkPad T450s macOS Big Sur + DW1820a configuration.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
+- If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
 - support ThinkPad X250 ThinkPad T450.
-
+- open Hi-DPI  reference: (https://github.com/xzhih/one-key-hidpi).
 ## Hardware information
 
 ```  
@@ -56,7 +57,7 @@
 - Bluetooth
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store
-- Ethernet card
+- Ethernet card     (Unable to use the Ethernet interface on the laptop after connecting the docking station)
 - sound card
 - USB
 - The battery
@@ -65,7 +66,14 @@
 - little red dot
 - miniDP
 - SD card reader
+- Docking USB
+- Docking Ethernet
+- Docking Audio  ( Set layout-id of sound card to 55. )
 
 ## Invalid
 - VGA
 - The fingerprint
+- Docking DisplayPort
+- Docking VGA
+- Docking DVI
+- Docking HDMI

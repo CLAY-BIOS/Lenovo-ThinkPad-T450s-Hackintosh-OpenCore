@@ -3,10 +3,11 @@
 ## 简介
 - 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
+- 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
 - 支持 ThinkPad X250 ThinkPad T450。
-
+- 一键开启Hi-DPI  参考:（https://github.com/xzhih/one-key-hidpi）。
 ## 硬件信息
 
 ```  
@@ -55,7 +56,7 @@
 - 蓝牙 
 - Handoff, Continuity, AirDrop
 - iMessage, FaceTime, App Store, iTunes Store
-- 以太网卡
+- 以太网卡  （连接扩展坞后无法使用笔记本上的以太网接口）
 - 声卡
 - USB
 - 电池
@@ -64,7 +65,14 @@
 - 小红点
 - miniDP
 - SD卡读卡器
+- 扩展坞 USB
+- 扩展坞 以太网
+- 扩展坞 音频 （需要将声卡 layout-id 设置为 55 ）
 
 ## 无效
 - VGA
 - 指纹
+- 扩展坞 DisplayPort
+- 扩展坞 VGA
+- 扩展坞 DVI
+- 扩展坞 HDMI

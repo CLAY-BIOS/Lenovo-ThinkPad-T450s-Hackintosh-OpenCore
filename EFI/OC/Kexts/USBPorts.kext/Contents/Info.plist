@@ -47,23 +47,19 @@
 				<key>kUSBWakePowerSupply</key>
 				<integer>5100</integer>
 				<key>port-count</key>
-				<data>
-				DwAAAA==
-				</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HSP0</key>
 					<dict>
 						<key>Comment</key>
-						<string>USB 2.0 Device</string>
+						<string>USB 2.0 Device - POWER</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
 						<string>HSP0</string>
 						<key>port</key>
-						<data>
-						AQAAAA==
-						</data>
+						<data>AQAAAA==</data>
 					</dict>
 					<key>HSP1</key>
 					<dict>
@@ -74,22 +70,18 @@
 						<key>name</key>
 						<string>HSP1</string>
 						<key>port</key>
-						<data>
-						AgAAAA==
-						</data>
+						<data>AgAAAA==</data>
 					</dict>
 					<key>HSP2</key>
 					<dict>
 						<key>Comment</key>
-						<string>USB 2.0 Device</string>
+						<string>USB 2.0 Device - ThinkPad Dock</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
 						<string>HSP2</string>
 						<key>port</key>
-						<data>
-						AwAAAA==
-						</data>
+						<data>AwAAAA==</data>
 					</dict>
 					<key>HSP3</key>
 					<dict>
@@ -100,9 +92,7 @@
 						<key>name</key>
 						<string>HSP3</string>
 						<key>port</key>
-						<data>
-						BAAAAA==
-						</data>
+						<data>BAAAAA==</data>
 					</dict>
 					<key>HSP4</key>
 					<dict>
@@ -113,9 +103,7 @@
 						<key>name</key>
 						<string>HSP4</string>
 						<key>port</key>
-						<data>
-						BQAAAA==
-						</data>
+						<data>BQAAAA==</data>
 					</dict>
 					<key>HSP5</key>
 					<dict>
@@ -126,9 +114,7 @@
 						<key>name</key>
 						<string>HSP5</string>
 						<key>port</key>
-						<data>
-						BgAAAA==
-						</data>
+						<data>BgAAAA==</data>
 					</dict>
 					<key>HSP6</key>
 					<dict>
@@ -139,9 +125,7 @@
 						<key>name</key>
 						<string>HSP6</string>
 						<key>port</key>
-						<data>
-						BwAAAA==
-						</data>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HSP7</key>
 					<dict>
@@ -152,22 +136,18 @@
 						<key>name</key>
 						<string>HSP7</string>
 						<key>port</key>
-						<data>
-						CAAAAA==
-						</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>SSP0</key>
 					<dict>
 						<key>Comment</key>
-						<string>USB 3.0 Device</string>
+						<string>USB 3.0 Device - POWER</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
 						<string>SSP0</string>
 						<key>port</key>
-						<data>
-						DAAAAA==
-						</data>
+						<data>DAAAAA==</data>
 					</dict>
 					<key>SSP1</key>
 					<dict>
@@ -178,35 +158,29 @@
 						<key>name</key>
 						<string>SSP1</string>
 						<key>port</key>
-						<data>
-						DQAAAA==
-						</data>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SSP2</key>
 					<dict>
 						<key>Comment</key>
-						<string>USB 3.0 Device</string>
+						<string>USB 3.0 Device - ThinkPad Dock</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
 						<string>SSP2</string>
 						<key>port</key>
-						<data>
-						DgAAAA==
-						</data>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SSP3</key>
 					<dict>
 						<key>Comment</key>
 						<string>Smart Card</string>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>2</integer>
 						<key>name</key>
 						<string>SSP3</string>
 						<key>port</key>
-						<data>
-						DwAAAA==
-						</data>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>

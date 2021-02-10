@@ -1435,7 +1435,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,28,0/0,0</string>
 				<key>compatible</key>
-				<string>pci10ec,522a</string>
+				<string>pci10ec,5227</string>
 				<key>device_type</key>
 				<string>Card Reader</string>
 				<key>model</key>
@@ -2677,7 +2677,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v </string>
+				<string>-v rtsx_sleep_wake_delay_ms=1000</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>booter-fileset-kernel</key>

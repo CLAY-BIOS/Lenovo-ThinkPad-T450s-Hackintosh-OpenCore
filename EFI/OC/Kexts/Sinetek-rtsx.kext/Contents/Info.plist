@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20D64</string>
+	<string>19H114</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,29 +17,27 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>7</string>
+	<string>8</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12D4e</string>
-	<key>DTPlatformName</key>
-	<string>macosx</string>
+	<string>11E801a</string>
 	<key>DTPlatformVersion</key>
-	<string>11.1</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>20C63</string>
+	<string>17A315g</string>
 	<key>DTSDKName</key>
-	<string>macosx11.1</string>
+	<string>macosx10.13</string>
 	<key>DTXcode</key>
-	<string>1240</string>
+	<string>1170</string>
 	<key>DTXcodeBuild</key>
-	<string>12D4e</string>
+	<string>11E801a</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Sinetek_rtsx</key>
@@ -51,7 +49,7 @@
 			<key>IOKitDebug</key>
 			<integer>65535</integer>
 			<key>IOPCIMatch</key>
-			<string>0x520910EC 0x522710EC 0x522910EC 0x522A10EC 0x524910EC 0x528610EC 0x528710EC 0x528910EC 0x525A10EC 0x526010EC</string>
+			<string>0x520910EC 0x522710EC 0x522910EC 0x522A10EC 0x524910EC 0x528610EC 0x528710EC 0x528910EC 0x525A10EC</string>
 			<key>IOProbeScore</key>
 			<integer>1000</integer>
 			<key>IOProviderClass</key>
@@ -59,7 +57,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.14</string>
+	<string>10.13</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 sinetek (modified by cholonam). All rights reserved.</string>
 	<key>OSBundleLibraries</key>
