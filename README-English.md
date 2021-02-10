@@ -8,7 +8,7 @@
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
 - support ThinkPad X250 ThinkPad T450.
-- open Hi-DPI  reference: (https://github.com/xzhih/one-key-hidpi).
+- open Hi-DPI  reference:   https://github.com/xzhih/one-key-hidpi
 ## Hardware information
 
 ```  

@@ -7,7 +7,7 @@
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
 - 支持 ThinkPad X250 ThinkPad T450。
-- 一键开启Hi-DPI  参考:（https://github.com/xzhih/one-key-hidpi）。
+- 一键开启Hi-DPI  参考:   https://github.com/xzhih/one-key-hidpi
 ## 硬件信息
 
 ```  
