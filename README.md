@@ -1,13 +1,24 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.6
+# ThinkPad T450s X250 T450 Big Sur OpenCore 0.6.6
 ![Thismachine](./picture/Thismachine.png)
 ## 简介
-- 这是一个完整的ThinkPad T450s macOS Big Sur + DW1820a 配置。
+- 这是一个完整的ThinkPad T450s macOS + DW1820a Hackintosh 配置。
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
-- 支持 ThinkPad X250 ThinkPad T450。
+- 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s。
 - 一键开启Hi-DPI  参考:   https://github.com/xzhih/one-key-hidpi
+
+# Intel Wi-Fi
+- 驱动文件以添加到项目中，根据自己的系统版本勾选，默认为Big Sur。
+- 不讨论Intel Wi-Fi的问题，因为驱动程序不稳定。
+- 参考:  https://github.com/OpenIntelWireless/itlwm
+![AirportItlwm](./picture/AirportItlwm.png)
+
+# 扩展坞
+- 使用扩展坞会导致睡眠出现问题，解决方法是在 config.plist->ACPI 中勾选 SSDT-IGBE 补丁。
+- 使用 SSDT-IGBE 补丁无法使用翻盖模式。
+
 ## 硬件信息
 
 ```  
@@ -17,7 +28,7 @@
 
 - 声卡：ALC292
 
-- 无线网卡：DW1820A   
+- 无线网卡：DW1820A   Intel 7265AC   Intel AX200
 ```
 
 # ThinkPad助手(ThinkpadAssistant)
@@ -59,7 +70,7 @@
 - 以太网卡  （连接扩展坞后无法使用笔记本上的以太网接口）
 - 声卡
 - USB
-- 电池
+- 电池和完整的电池信息   
 - 触摸屏 
 - 触摸板 
 - 小红点
@@ -76,3 +87,17 @@
 - 扩展坞 VGA
 - 扩展坞 DVI
 - 扩展坞 HDMI
+
+> ## 学分
+
+- [@tylernguyen](https://github.com/tylernguyen/x1c6-hackintosh) 新一代电池补丁。
+- [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
+- [daliansky/OC-little](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
+- [@xzhih](https://github.com/xzhih) 一键开启Hi-DPI。 
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) 读卡器修复 (@CLAY-BIOS)。
+- [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) ThinkPad助手。
+- [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
+
+非常感谢 [Acidanthera](https://github.com/acidanthera) 团队，如果没有他们的工作，这将是不可能的。
+
+欢迎提问，但请不要问太低级的问题。

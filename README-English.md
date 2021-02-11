@@ -1,14 +1,25 @@
-# ThinkPad T450s Big Sur OpenCore 0.6.6
+# ThinkPad T450s X250 T450 Big Sur OpenCore 0.6.6
 ![Thismachine](./picture/Thismachine.png)
 ## Introduction to the
 
-- This is a full ThinkPad T450s macOS Big Sur + DW1820a configuration.
+- This is a full ThinkPad T450s macOS Hackintosh configuration.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
-- support ThinkPad X250 ThinkPad T450.
+- support ThinkPad X250 ThinkPad T450 ThinkPad T450s.
 - open Hi-DPI  reference:   https://github.com/xzhih/one-key-hidpi
+
+# Intel Wi-Fi
+- To add the driver file to the project, check it according to your system version, and the default is Big Sur.
+- Don't discuss Intel Wi Fi because the driver is unstable.
+- reference:    https://github.com/OpenIntelWireless/itlwm
+![AirportItlwm](./picture/AirportItlwm.png)
+
+# Docking
+- Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
+- Flap mode cannot be used with SSDT-IGBE patch.
+
 ## Hardware information
 
 ```  
@@ -18,7 +29,7 @@
 
 - sound card：ALC292
 
-- Wireless network card：DW1820A
+- Wireless network card：DW1820A  Intel 7265AC   Intel AX200
 ```
 
 # ThinkPad Assistant 
@@ -60,7 +71,7 @@
 - Ethernet card     (Unable to use the Ethernet interface on the laptop after connecting the docking station)
 - sound card
 - USB
-- The battery
+- Battery and complete battery information
 - touch screen
 - touch pad
 - little red dot
@@ -77,3 +88,17 @@
 - Docking VGA
 - Docking DVI
 - Docking HDMI
+
+> ## Credits
+
+- [@tylernguyen](https://github.com/tylernguyen/x1c6-hackintosh) new generation of battery patches.
+- [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
+- [daliansky/OC-little](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
+- [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) Card reader fix (@CLAY-BIOS).
+- [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) for ThinkpadAssistant.
+- [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
+
+The greatest thank you and appreciation to the [Acidanthera](https://github.com/acidanthera) team.
+
+Questions are welcome, but please don't ask too low - level questions.
