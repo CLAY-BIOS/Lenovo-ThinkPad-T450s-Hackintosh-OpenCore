@@ -6,11 +6,13 @@
 - 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
+- 支持 Mojave。
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s。
 - 一键开启Hi-DPI  参考:   https://github.com/xzhih/one-key-hidpi
 
 # Intel Wi-Fi
 - 驱动文件以添加到项目中，根据自己的系统版本勾选，默认为Big Sur。
+- 隔空投送不可用。
 - 不讨论Intel Wi-Fi的问题，因为驱动程序不稳定。
 - 参考:  https://github.com/OpenIntelWireless/itlwm
 ![AirportItlwm](./picture/AirportItlwm.png)
@@ -94,7 +96,7 @@
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
 - [@xzhih](https://github.com/xzhih) 一键开启Hi-DPI。 
-- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) 读卡器修复 (@CLAY-BIOS)。
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) 读卡器修复. https://github.com/cholonam/Sinetek-rtsx/pull/18
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) ThinkPad助手。
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
 

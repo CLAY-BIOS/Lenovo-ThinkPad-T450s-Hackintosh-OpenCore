@@ -7,11 +7,13 @@
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
+- support Mojave.
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s.
 - open Hi-DPI  reference:   https://github.com/xzhih/one-key-hidpi
 
 # Intel Wi-Fi
 - To add the driver file to the project, check it according to your system version, and the default is Big Sur.
+- Airdrop is not available.
 - Don't discuss Intel Wi Fi because the driver is unstable.
 - reference:    https://github.com/OpenIntelWireless/itlwm
 ![AirportItlwm](./picture/AirportItlwm.png)
@@ -95,7 +97,7 @@
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
 - [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
-- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) Card reader fix (@CLAY-BIOS).
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) Card reader fix. https://github.com/cholonam/Sinetek-rtsx/pull/18 
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) for ThinkpadAssistant.
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
 
