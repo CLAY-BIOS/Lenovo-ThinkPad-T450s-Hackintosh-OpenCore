@@ -1,31 +1,31 @@
 # ThinkPad T450s X250 T450 Big Sur OpenCore 0.6.6
-![Thismachine](./picture/Thismachine.png)
-## Introduction to the
+<img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="420">
 
-- This is a full ThinkPad T450s macOS Hackintosh configuration.
+[![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-green)](https://github.com/acidanthera/OpenCorePkg)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450-orange)](https://think.lenovo.com.cn/index.html)
+
+**DISCLAIMER:**
+
+Before you begin, read the entire readme file.
+I don't accept any responsibility for any damage that may be caused.
+If you find errors or improvements (either in the configuration or in the documentation), consider opening the problem or requesting a request.
+If you find my work useful, consider clicking ⭐️Star in the upper right corner.
+It would mean a lot to me.
+
+
+## Introduction to the
+- This is a full ThinkPad T450s macOS + DW1820a Hackintosh configuration.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
 - support Mojave.
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s.
-- open Hi-DPI  reference:   https://github.com/xzhih/one-key-hidpi
-
-# Intel Wi-Fi
-- To add the driver file to the project, check it according to your system version, and the default is Big Sur.
-- Airdrop is not available.
-- Don't discuss Intel Wi Fi because the driver is unstable.
-- reference:    https://github.com/OpenIntelWireless/itlwm
-![AirportItlwm](./picture/AirportItlwm.png)
-
-# Docking
-- Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
-- Flap mode cannot be used with SSDT-IGBE patch.
 
 ## Hardware information
-
 ```  
-- CPU：Intel Core i7-5600U 2.6GHz (Boots 3.2GHz)
+- CPU：Intel Core i7-5600U i7-5600U i7-5500u i5-5300U i5-5200U
 
 - The core graphics：Intel HD 5500 Graphics 
 
@@ -33,8 +33,105 @@
 
 - Wireless network card：DW1820A  Intel 7265AC   Intel AX200
 ```
+## Installation
 
-# ThinkPad Assistant 
+<details>  
+<summary><strong>How to install macOS</strong></summary>
+</br>
+
+1. [Create an installation media](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer)
+1. Download the [latest EFI folder](https://github.com/CLAY-BIOS/Lenovo-ThinkPad-T450s-Hackintosh-Big-Sur-OpenCore/releases) and copy it into the ESP partiton
+1. Change your BIOS settings according to the table below
+1. Boot from the USB installer (press `F12` to choose boot volume) and [start the installation process](https://dortania.github.io/OpenCore-Install-Guide/installation/installation-process.html#booting-the-opencore-usb)
+
+</details>
+
+<details>  
+<summary><strong>BIOS Set up the </strong></summary>
+</br>
+
+**BIOS (1.37):**
+-  Security -> Security Chip`: **Disabled**;
+-  Memory Protection -> Execution Prevention`: **Enabled**;
+-  Virtualization -> Intel Virtualization Technology`: **Enabled**;
+-  Internal Device Access -> Bottom Cover Tamper Detection`: must be **Disabled**;
+-  Anti-Theft -> Current Setting`: **Disabled**;
+-  Anti-Theft -> Computrace -> Current Setting`: **Disabled**;
+-  Secure Boot -> Secure Boot`: **Disabled**;
+-  UEFI/Legacy Boot`: **UEFI Only**;
+-  CSM Support`: **Yes**.
+
+</details>
+
+## state
+<details>  
+<summary><strong>What effective ✅</strong></summary>
+</br>
+ 
+- [x] CPUPower management
+- [x] Intel HD 5500 Graphics 
+- [x] The complete USB
+- [x] camera
+- [x] Sleep/wake up/shut down/restart
+- [x] Intel Gigabit Ethernet (you can't use the Ethernet interface on your laptop after connecting to the docking station)
+- [x] Wifi, Bluetooth, Airdrop, Handoff, Continuity      (using Intel-Wi-Fi will render some features unusable)
+- [x] iMessage, FaceTime, App Store, iTunes Store
+- [x] Speaker and headphone jack
+- [x] Battery and complete battery information
+- [x] Keyboard maps and hotkeys [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant) 
+- [x] The trackpad, the little red dot, and the physical button
+- [x] Support touch screen      (With multi-touch and touchscreen gestures)
+- [x] mini DisplayPort
+- [x] SD card reader
+- [x] Docking USB
+- [x] Docking Ethernet
+- [x] Docking Audio     ( Set layout-id of sound card to 55. )
+
+</details>
+
+<details>  
+<summary><strong>What's not working ⚠️</strong></summary>
+</br>
+
+- [ ] VGA
+- [ ] Sidecar
+- [ ] The fingerprint
+- [ ] Docking DisplayPort
+- [ ] Docking DVI
+- [ ] Docking HDMI
+
+</details>
+
+<details>  
+<summary><strong>Intel Wi-Fi</strong></summary>
+</br>
+
+- AirPortitlWM. kext to add to the project, check according to your system version, default is Big Sur.
+- Some features are not available.
+- The Intel Wi-Fi issue is not discussed because the driver is unstable.
+- reference:  https://github.com/OpenIntelWireless/itlwm
+![AirportItlwm](./picture/AirportItlwm.png)
+
+- ### There is another Intel Wi-Fi driver：
+- AirPortOpenBSD.kext
+- Interested friends can try it on their own.
+- reference:  https://github.com/a565109863/AirPortOpenBSD
+
+</details>
+
+<details>  
+<summary><strong>About the docking</strong></summary>
+</br>
+
+- Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
+- Flap mode cannot be used with SSDT-IGBE patch.
+
+</details>
+
+<details>  
+<summary><strong>ThinkPad Assistant</strong></summary>
+</br>
+
 - Allows you to use all function keys on Thinkpad T450s X250 T450 laptop.
 - Copy the ThinkpadAssistant into the Application folder.
 - Start ThinkpadAssistant and check "Start when logged in" in the menu bar.
@@ -49,51 +146,32 @@
   (press the sleep shortcut again during sleep to terminate sleep).
   (When an external monitor is connected, after pressing the sleep button, the working screen changes to an external monitor (the internal screen is turned off); pressing the sleep button again, the internal and external monitors return to normal.)
 - PrtSc maps to F13: this can be set as screenshot in system preferences -> keyboard -> shortcut.
------------------------------------------------------------------------------------------------------------------
-![demo](./picture/demo.gif)
 
-## BIOS (1.37)
--  Security -> Security Chip`: **Disabled**;
--  Memory Protection -> Execution Prevention`: **Enabled**;
--  Virtualization -> Intel Virtualization Technology`: **Enabled**;
--  Internal Device Access -> Bottom Cover Tamper Detection`: must be **Disabled**;
--  Anti-Theft -> Current Setting`: **Disabled**;
--  Anti-Theft -> Computrace -> Current Setting`: **Disabled**;
--  Secure Boot -> Secure Boot`: **Disabled**;
--  UEFI/Legacy Boot`: **UEFI Only**;
--  CSM Support`: **Yes**.
+</details>
 
-## Effective
-- CPU
-- Sleep/Wake up
-- Wifi
-- Bluetooth
-- Handoff, Continuity, AirDrop
-- iMessage, FaceTime, App Store, iTunes Store
-- Ethernet card     (Unable to use the Ethernet interface on the laptop after connecting the docking station)
-- sound card
-- USB
-- Battery and complete battery information
-- touch screen
-- touch pad
-- little red dot
-- miniDP
-- SD card reader
-- Docking USB
-- Docking Ethernet
-- Docking Audio  ( Set layout-id of sound card to 55. )
+<details>  
+<summary><strong>Enable fan and LED controls</strong></summary>
+</br>
 
-## Invalid
-- VGA
-- The fingerprint
-- Docking DisplayPort
-- Docking VGA
-- Docking DVI
-- Docking HDMI
+1. Download and install [YogaSMC-App-Release.dmg](https://github.com/zhen-zen/YogaSMC/releases) 
+1. Open the application
+1. Check the "Log in and Start" option
 
-> ## Credits
+</details>
 
-- [@tylernguyen](https://github.com/tylernguyen/x1c6-hackintosh) new generation of battery patches.
+<details>  
+<summary><strong>Hi-DPI is turned on with one click</strong></summary>
+</br>
+
+1. reference:   https://github.com/xzhih/one-key-hidpi
+
+</details>
+
+
+
+> # Credits
+
+- [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) A new generation of battery patches.
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
 - [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
