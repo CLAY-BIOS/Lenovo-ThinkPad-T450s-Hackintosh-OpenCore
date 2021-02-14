@@ -86,6 +86,10 @@ It would mean a lot to me.
 - [x] Docking USB
 - [x] Docking Ethernet
 - [x] Docking Audio     ( Set layout-id of sound card to 55. )
+- [x] Docking VGA
+- [x] Docking DisplayPort
+- [x] Docking DVI
+- [x] Docking HDMI
 
 </details>
 
@@ -96,9 +100,6 @@ It would mean a lot to me.
 - [ ] VGA
 - [ ] Sidecar
 - [ ] The fingerprint
-- [ ] Docking DisplayPort
-- [ ] Docking DVI
-- [ ] Docking HDMI
 
 </details>
 
@@ -106,15 +107,18 @@ It would mean a lot to me.
 <summary><strong>Intel Wi-Fi</strong></summary>
 </br>
 
-- AirPortitlWM. kext to add to the project, check according to your system version, default is Big Sur.
-- Some features are not available.
+### Drive A：
+- AirportItlwm.kext。
+- To add AirPortitlWM. kext to your project, check it based on your system version, default to Big Sur.
+- Separate airdrops are not available. Using AirPortitlWM. kext can cause trackpad and Bluetooth problems.
 - The Intel Wi-Fi issue is not discussed because the driver is unstable.
 - reference:  https://github.com/OpenIntelWireless/itlwm
 ![AirportItlwm](./picture/AirportItlwm.png)
 
-- ### There is another Intel Wi-Fi driver：
+### Drive B：
 - AirPortOpenBSD.kext
-- Interested friends can try it on their own.
+- Airdrop, relay, and continuity are not available. Using AirportOpenBSD. Kext will not cause trackpad and Bluetooth issues.
+- Interested friends can download their own try.
 - reference:  https://github.com/a565109863/AirPortOpenBSD
 
 </details>
@@ -125,6 +129,8 @@ It would mean a lot to me.
 
 - Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
 - Flap mode cannot be used with SSDT-IGBE patch.
+- The docking station is perfectly adapted, but some testing is needed. 
+![Docking](./picture/Docking.png)
 
 </details>
 
