@@ -1,14 +1,16 @@
-# ThinkPad T450s X250 T450 Big Sur OpenCore 0.6.6
+# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.6
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="420">
 
 [![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-green)](https://github.com/acidanthera/OpenCorePkg)
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450-orange)](https://think.lenovo.com.cn/index.html)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
 
+### The author：[@CLAY-BIOS](https://github.com/CLAY-BIOS)  
 Before you begin, read the entire readme file.
 I don't accept any responsibility for any damage that may be caused.
+Part of the ACPI patch in this warehouse is completed by myself independently. Please note the source for use and reference.
 If you find errors or improvements (either in the configuration or in the documentation), consider opening the problem or requesting a request.
 If you find my work useful, consider clicking ⭐️Star in the upper right corner.
 It would mean a lot to me.
@@ -21,7 +23,8 @@ It would mean a lot to me.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
 - support Mojave.
-- support ThinkPad X250 ThinkPad T450 ThinkPad T450s.
+- This warehouse can be used for all the 5th generation ThinkPads. The models that have been confirmed to be supported are as follows:
+- support ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd.
 
 ## Hardware information
 ```  

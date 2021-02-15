@@ -1,14 +1,16 @@
-# ThinkPad T450s X250 T450 Big Sur OpenCore 0.6.6
-<img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="420">
+# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.6
+<img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-green)](https://github.com/acidanthera/OpenCorePkg)
-[![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450-orange)](https://think.lenovo.com.cn/index.html)
+[![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
 
+### 作者：[@CLAY-BIOS](https://github.com/CLAY-BIOS)  
 在开始之前，请阅读整个自述文件。
 我对可能造成的任何损失不承担任何责任。
+此仓库部分ACPI补丁由本人独立完成，使用和引用请注明出处。
 如果您发现错误或有任何改进（无论是在配置中还是在文档中），请考虑打开问题或请求请求。
 如果您发现我的工作有用，可以考虑点击右上角的⭐️Star。
 这对我来说意义重大。 
@@ -21,7 +23,8 @@
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
 - 支持 Mojave。
-- 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s。
+- 此仓库可适用于所有第五代ThinkPad，已经确认支持的型号如下：
+- 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
 
 ## 硬件信息
 ```  
@@ -114,7 +117,7 @@
 - 参考:  https://github.com/OpenIntelWireless/itlwm
 ![AirportItlwm](./picture/AirportItlwm.png)
 
-- ### 驱动二：
+ ### 驱动二：
 - AirPortOpenBSD.kext
 - 隔空投送、接力、连续性不可用，使用AirPortOpenBSD.kext不会出现触控板和蓝牙问题。
 - 感兴趣的朋友可以自己下载尝试。
