@@ -11,18 +11,20 @@
 在开始之前，请阅读整个自述文件。
 我对可能造成的任何损失不承担任何责任。
 此仓库部分ACPI补丁由本人独立完成，使用和引用请注明出处。
-如果您发现错误或有任何改进（无论是在配置中还是在文档中），请考虑打开问题或请求请求。
+如果您发现错误或有任何改进（无论是在配置中还是在文档中），请考虑打开问题或拉取请求。
 如果您发现我的工作有用，可以考虑点击右上角的⭐️Star。
 这对我来说意义重大。 
 
 
 ## 简介
-- 这是一个完整的ThinkPad T450s macOS + DW1820a Hackintosh 配置。
+
+- 此仓库原本是为ThinkPad T450s创建，默认网卡为DW1820a，通过后续更新支持了一些其他机型。
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
 - 支持 Catalina。
 - 支持 Mojave。
+- 支持扩展坞。
 - 此仓库可适用于所有第五代ThinkPad，已经确认支持的型号如下：
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
 
@@ -175,6 +177,33 @@
 
 </details>
 
+## 第三硬盘位
+<details>  
+<summary><strong>如何安装第三硬盘 </strong></summary>
+</br>
+
+1. ThinkPad X250 ThinkPad T450 ThinkPad T450s 可以扩展第三硬盘。
+1. 购买第三硬盘扩展板（如图），它仅支持单面 M.2 2242 SATA SSD。
+![SATA-1](./picture/SATA-1.png)
+1. 插入单面 M.2 2242 SATA SSD。
+![SATA-2](./picture/SATA-2.png)
+1. 将它安装在电池下方。
+![SATA-3](./picture/SATA-3.png)
+
+</details>
+
+<details>  
+<summary><strong>如何安装双面 M.2 2242 SATA SSD </strong></summary>
+</br>
+
+1. 将双面 M.2 2242 SATA SSD插入扩展板。
+![SATA-4](./picture/SATA-4.png)
+1. 然后轻轻将SSD按下，轻轻翘起扩展板。（这需要一点耐心）
+![SATA-5](./picture/SATA-5.png)
+![SATA-6](./picture/SATA-6.png)
+1. 拧上螺丝。
+
+</details>
 
 
 > # 学分
@@ -183,10 +212,17 @@
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC。
 - [daliansky/OC-little](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
 - [@xzhih](https://github.com/xzhih) 一键开启Hi-DPI。 
-- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) 读卡器修复。 https://github.com/cholonam/Sinetek-rtsx/pull/18
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) [读卡器修复](https://github.com/cholonam/Sinetek-rtsx/pull/18)
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) ThinkPad助手。
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS。
 
 非常感谢 [Acidanthera](https://github.com/acidanthera) 团队，如果没有他们的工作，这将是不可能的。
 
 欢迎提问，但请不要问太低级的问题。
+
+
+# 剽窃者(不可原谅的)：
+- [@trandtung1209](https://github.com/trandtung1209/EFI-X1C3-BigSur)
+- 此项目被此人剽窃盗取，并发布在 [@daliansky/Hackintosh](https://github.com/daliansky/Hackintosh/pulls)
+- 已通过合并拉取请求，删除了此人的链接。
+

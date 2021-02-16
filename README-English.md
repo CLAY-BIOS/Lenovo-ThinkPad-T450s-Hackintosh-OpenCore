@@ -11,18 +11,20 @@
 Before you begin, read the entire readme file.
 I don't accept any responsibility for any damage that may be caused.
 Part of the ACPI patch in this warehouse is completed by myself independently. Please note the source for use and reference.
-If you find errors or improvements (either in the configuration or in the documentation), consider opening the problem or requesting a request.
+If you find errors or have any improvements (whether in the configuration or in the document), consider opening the problem or pulling the request.
 If you find my work useful, consider clicking ⭐️Star in the upper right corner.
 It would mean a lot to me.
 
 
 ## Introduction to the
-- This is a full ThinkPad T450s macOS + DW1820a Hackintosh configuration.
+
+- This repository was originally created for ThinkPad T450s. The default network card is DW1820A, and some other models have been supported through subsequent updates.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
 - support Catalina.
 - support Mojave.
+- support docking.
 - This warehouse can be used for all the 5th generation ThinkPads. The models that have been confirmed to be supported are as follows:
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd.
 
@@ -176,18 +178,50 @@ It would mean a lot to me.
 
 </details>
 
+## Third hard disk 
+<details>  
+<summary><strong>How to install the third hard drive  </strong></summary>
+</br>
+
+1. ThinkPad X250 ThinkPad T450 ThinkPad T450s Can expand the third hard drive.
+1. Purchase the third hard drive expansion board (pictured), which only supports single-sided M.2 2242 SATA SSD. 
+![SATA-1](./picture/SATA-1.png)
+1. Insert M.2 2242 SATA SSD。
+![SATA-2](./picture/SATA-2.png)
+1. Install it under the battery. 
+![SATA-3](./picture/SATA-3.png)
+
+</details>
+
+<details>  
+<summary><strong>How to install double-sided  M.2 2242 SATA SSD </strong></summary>
+</br>
 
 
+1. Insert the double-sided M.2 2242 SATA SSD into the expansion board. 
+![SATA-4](./picture/SATA-4.png)
+1. Then gently press down on the SSD and gently lift the expansion board. (This requires a little patience) .
+![SATA-5](./picture/SATA-5.png)
+![SATA-6](./picture/SATA-6.png)
+1. Screw on the screws. 
+
+</details>
 > # Credits
 
 - [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) A new generation of battery patches.
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
 - [daliansky/OC-little](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
 - [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
-- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) Card reader fix. https://github.com/cholonam/Sinetek-rtsx/pull/18 
+- [@cholonam](https://github.com/cholonam/Sinetek-rtsx) [Card reader fix](https://github.com/cholonam/Sinetek-rtsx/pull/18)
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) for ThinkpadAssistant.
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
 
 The greatest thank you and appreciation to the [Acidanthera](https://github.com/acidanthera) team.
 
 Questions are welcome, but please don't ask too low - level questions.
+
+
+# Plagiarism (unforgivable) ：
+- [@trandtung1209](https://github.com/trandtung1209/EFI-X1C3-BigSur)
+- This project was plagiarized by this person and published in[@daliansky/Hackintosh](https://github.com/daliansky/Hackintosh/pulls)
+- This person's link has been removed by merging pull requests.
