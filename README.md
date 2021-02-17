@@ -209,8 +209,9 @@
 > # 学分
 
 - [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) 新一代电池补丁。
+- [@Sniki](https://github.com/Sniki?tab=repositories) SSDT-IGBE补丁。
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC。
-- [daliansky/OC-little](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
+- [@daliansky](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
 - [@xzhih](https://github.com/xzhih) 一键开启Hi-DPI。 
 - [@cholonam](https://github.com/cholonam/Sinetek-rtsx) [读卡器修复](https://github.com/cholonam/Sinetek-rtsx/pull/18)
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) ThinkPad助手。

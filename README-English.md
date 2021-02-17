@@ -209,8 +209,9 @@ It would mean a lot to me.
 > # Credits
 
 - [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) A new generation of battery patches.
+- [@Sniki](https://github.com/Sniki?tab=repositories) SSDT-IGBE The patch.
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
-- [daliansky/OC-little](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
+- [daliansky](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
 - [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
 - [@cholonam](https://github.com/cholonam/Sinetek-rtsx) [Card reader fix](https://github.com/cholonam/Sinetek-rtsx/pull/18)
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) for ThinkpadAssistant.
