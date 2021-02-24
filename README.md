@@ -78,15 +78,15 @@
 - [x] 摄像头
 - [x] 休眠/唤醒/关机/重启
 - [x] 英特尔千兆以太网  （连接扩展坞后无法使用笔记本上的以太网接口）
-- [x] Wi-Fi，蓝牙，空投投送，切换，连续性  （使用intel- Wi-Fi将导致某些功能不可用）
+- [x] Wi-Fi，蓝牙，空投投送，切换，连续性  （使用intel-Wi-Fi将导致某些功能不可用）
 - [x] iMessage, FaceTime, App Store, iTunes Store
-- [x] 扬声器和耳机插孔
+- [x] 扬声器和耳机插孔   
 - [x] 电池和完整的电池信息  
 - [x] 键盘地图和热键 [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant) 
-- [x] 触控板、小红点和物理按钮
+- [x] 触控板、小红点和物理按钮      
 - [x] 触摸屏 （带有多点触控和触屏手势）
 - [x] mini DisplayPort
-- [x] SD卡读卡器 
+- [x] SD卡读卡器    （通过修改[Sinetek-rtsx.kext源代码](https://github.com/cholonam/Sinetek-rtsx/pull/18)来修复，为此我学习了一段时间的IOKit.）
 - [x] 扩展坞 USB
 - [x] 扩展坞 以太网
 - [x] 扩展坞 耳机插孔 （需要将声卡 layout-id 设置为 55 ）
@@ -108,22 +108,14 @@
 </details>
 
 <details>  
-<summary><strong>Intel Wi-Fi</strong></summary>
+<summary><strong>关于Intel Wi-Fi</strong></summary>
 </br>
 
-### 驱动一：
-- AirportItlwm.kext。
-- 以将AirportItlwm.kext添加到项目中，根据自己的系统版本勾选，默认为Big Sur。
-- 隔空投送不可用。使用AirportItlwm.kext可能导致触控板和蓝牙出现问题。
-- 不讨论Intel Wi-Fi的问题，因为驱动程序不稳定。
-- 参考:  https://github.com/OpenIntelWireless/itlwm
-![AirportItlwm](./picture/AirportItlwm.png)
-
- ### 驱动二：
-- AirPortOpenBSD.kext
-- 隔空投送、接力、连续性不可用，使用AirPortOpenBSD.kext不会出现触控板和蓝牙问题。
-- 感兴趣的朋友可以自己下载尝试。
-- 参考:  https://github.com/a565109863/AirPortOpenBSD
+### 说明：
+- 在BigSur中使用AirportItlwm.kext来驱动Intel-WiFi。
+- 在Catalina和Mojave中使用AirPortOpenBSD.kext来驱动Intel-WiFi。
+- 根据自己的系统版本勾选。
+![Intel-WiFi](./picture/Intel-WiFi.png)
 
 </details>
 
@@ -221,9 +213,4 @@
 
 欢迎提问，但请不要问太低级的问题。
 
-
-# 剽窃者(不可原谅的)：
-- [@trandtung1209](https://github.com/trandtung1209/EFI-X1C3-BigSur)
-- 此项目被此人剽窃盗取，并发布在 [@daliansky/Hackintosh](https://github.com/daliansky/Hackintosh/pulls)
-- 已通过合并拉取请求，删除了此人的链接。
 

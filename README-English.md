@@ -79,15 +79,15 @@ It would mean a lot to me.
 - [x] camera
 - [x] Sleep/wake up/shut down/restart
 - [x] Intel Gigabit Ethernet (you can't use the Ethernet interface on your laptop after connecting to the docking station)
-- [x] Wifi, Bluetooth, Airdrop, Handoff, Continuity      (using Intel-Wi-Fi will render some features unusable)
+- [x] Wifi, Bluetooth, Airdrop, Handoff, Continuity     (Using intel-Wi-Fi may cause no sound after waking up)
 - [x] iMessage, FaceTime, App Store, iTunes Store
-- [x] Speaker and headphone jack
+- [x] Speaker and headphone jack    
 - [x] Battery and complete battery information
 - [x] Keyboard maps and hotkeys [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant) 
-- [x] The trackpad, the little red dot, and the physical button
+- [x] The trackpad, the little red dot, and the physical button 
 - [x] Support touch screen      (With multi-touch and touchscreen gestures)
 - [x] mini DisplayPort
-- [x] SD card reader
+- [x] SD card reader    (Fixed by modifying the source code of [Sinetek-rtsx.kext](https://github.com/cholonam/Sinetek-rtsx/pull/18), for which I studied IOKit for a while)
 - [x] Docking USB
 - [x] Docking Ethernet
 - [x] Docking Audio     ( Set layout-id of sound card to 55. )
@@ -109,23 +109,14 @@ It would mean a lot to me.
 </details>
 
 <details>  
-<summary><strong>Intel Wi-Fi</strong></summary>
+<summary><strong>About the Intel Wi-Fi</strong></summary>
 </br>
 
-### Drive A：
-- AirportItlwm.kext。
-- To add AirPortitlWM. kext to your project, check it based on your system version, default to Big Sur.
-- Separate airdrops are not available. Using AirPortitlWM. kext can cause trackpad and Bluetooth problems.
-- The Intel Wi-Fi issue is not discussed because the driver is unstable.
-- reference:  https://github.com/OpenIntelWireless/itlwm
-![AirportItlwm](./picture/AirportItlwm.png)
-
-### Drive B：
-- AirPortOpenBSD.kext
-- Airdrop, relay, and continuity are not available. Using AirportOpenBSD. Kext will not cause trackpad and Bluetooth issues.
-- Interested friends can download their own try.
-- reference:  https://github.com/a565109863/AirPortOpenBSD
-
+### instructions：
+- Use AirportItlwm.kext to drive Intel-WiFi in BigSur.
+- Use AirPortOpenBSD.kext to drive Intel-WiFi in Catalina and Mojave.
+- Check according to your own system version.
+![Intel-WiFi](./picture/Intel-WiFi.png)
 </details>
 
 <details>  
@@ -222,7 +213,4 @@ The greatest thank you and appreciation to the [Acidanthera](https://github.com/
 Questions are welcome, but please don't ask too low - level questions.
 
 
-# Plagiarism (unforgivable) ：
-- [@trandtung1209](https://github.com/trandtung1209/EFI-X1C3-BigSur)
-- This project was plagiarized by this person and published in[@daliansky/Hackintosh](https://github.com/daliansky/Hackintosh/pulls)
-- This person's link has been removed by merging pull requests.
+
