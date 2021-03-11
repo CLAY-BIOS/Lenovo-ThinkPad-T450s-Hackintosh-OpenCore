@@ -1,4 +1,4 @@
-# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.6
+# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
@@ -10,7 +10,6 @@
 ### 作者：[@CLAY-BIOS](https://github.com/CLAY-BIOS)  
 在开始之前，请阅读整个自述文件。
 我对可能造成的任何损失不承担任何责任。
-此仓库部分ACPI补丁由本人独立完成，使用和引用请注明出处。
 如果您发现错误或有任何改进（无论是在配置中还是在文档中），请考虑打开问题或拉取请求。
 如果您发现我的工作有用，可以考虑点击右上角的⭐️Star。
 这对我来说意义重大。 
@@ -25,7 +24,7 @@
 - 支持 Catalina。
 - 支持 Mojave。
 - 支持扩展坞。
-- 此仓库可适用于所有第五代ThinkPad，已经确认支持的型号如下：
+- 此仓库可适用于所有使用第五代CPU（Broadwell）的ThinkPad，已经确认支持的型号如下：
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
 
 ## 硬件信息
@@ -125,6 +124,7 @@
 
 - 使用扩展坞会导致睡眠出现问题，解决方法是在 config.plist->ACPI 中勾选 SSDT-IGBE 补丁。
 - 使用 SSDT-IGBE 补丁无法使用翻盖模式。
+- 最多可同时连接三台显示器（包括内置显示器）。
 - 扩展坞已完美适配，但还需要一些测试。
 ![Docking](./picture/Docking.png)
 
@@ -134,7 +134,7 @@
 <summary><strong>ThinkPad助手(ThinkpadAssistant)</strong></summary>
 </br>
 
-- 可让你在Thinkpad T450s X250 T450笔记本电脑上使用所有功能键。
+- 可让你在Thinkpad T450s X250 T450 笔记本电脑上使用所有功能键。
 - 复制ThinkpadAssistant到应用程序文件夹。
 - 启动ThinkpadAssistant，并在菜单栏中勾选“登录时启动”。
 - F4：麦克风静音/取消静音（带有状态LED指示）。
@@ -144,10 +144,18 @@
 - F9：打开系统偏好设置。
 - F12：打开启动板。
 - FN + Space：切换键盘背光。
-- FN + 4：睡眠快捷键。
-（睡眠过程中再次按下睡眠快捷键即可终止睡眠。）
-（连接外部显示器时，按睡眠按钮后，工作屏幕变为外部显示器（内部屏幕关闭）；再按一次睡眠按钮，内部和外部显示器恢复正常。）
 - PrtSc 映射到 F13：可在系统偏好设置-->键盘-->快捷键将它设置为截图。
+
+</details>
+
+<details>  
+<summary><strong>睡眠快捷键</strong></summary>
+</br>
+
+- FN + 4：睡眠快捷键。（睡眠过程中再次按下睡眠快捷键即可终止睡眠。）
+- 当连接外部显示器时 FN + 4 变为（关闭/打开）内置显示器。
+（按睡眠按钮后，显示屏幕变为外部显示器（内部屏幕关闭）；再按一次睡眠按钮（内部显示器重新打开）。
+- 此方法通过ACPI补丁实现，功能与Windows中一样。
 
 </details>
 
@@ -200,8 +208,8 @@
 
 > # 学分
 
+- [@Sniki](https://github.com/Sniki?tab=repositories)
 - [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) 新一代电池补丁。
-- [@Sniki](https://github.com/Sniki?tab=repositories) SSDT-IGBE补丁。
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC。
 - [@daliansky](https://github.com/daliansky/OC-little) 各种ACPI热补丁样本。 
 - [@xzhih](https://github.com/xzhih) 一键开启Hi-DPI。 

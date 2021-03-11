@@ -1,4 +1,4 @@
-# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.6
+# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="420">
 
 [![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
@@ -10,7 +10,6 @@
 ### The author：[@CLAY-BIOS](https://github.com/CLAY-BIOS)  
 Before you begin, read the entire readme file.
 I don't accept any responsibility for any damage that may be caused.
-Part of the ACPI patch in this warehouse is completed by myself independently. Please note the source for use and reference.
 If you find errors or have any improvements (whether in the configuration or in the document), consider opening the problem or pulling the request.
 If you find my work useful, consider clicking ⭐️Star in the upper right corner.
 It would mean a lot to me.
@@ -25,7 +24,7 @@ It would mean a lot to me.
 - support Catalina.
 - support Mojave.
 - support docking.
-- This warehouse can be used for all the 5th generation ThinkPads. The models that have been confirmed to be supported are as follows:
+This repository is available for all ThinkPads using 5th generation CPUs (Broadwell). The confirmed supported models are shown below
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd.
 
 ## Hardware information
@@ -125,6 +124,7 @@ It would mean a lot to me.
 
 - Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
 - Flap mode cannot be used with SSDT-IGBE patch.
+- Up to three displays (including the built-in display) 
 - The docking station is perfectly adapted, but some testing is needed. 
 ![Docking](./picture/Docking.png)
 
@@ -144,10 +144,17 @@ It would mean a lot to me.
 - F9: Open System Preferences.
 - F12: Open Launchpad.
 - FN+Space: Toggle Keyboard Backlight.
-- FN + 4: Sleep shortcut.
-  (press the sleep shortcut again during sleep to terminate sleep).
-  (When an external monitor is connected, after pressing the sleep button, the working screen changes to an external monitor (the internal screen is turned off); pressing the sleep button again, the internal and external monitors return to normal.)
 - PrtSc maps to F13: this can be set as screenshot in system preferences -> keyboard -> shortcut.
+
+</details>
+
+<details>  
+<summary><strong>Sleep shortcut</strong></summary>
+</br>
+
+- FN + 4: Sleep shortcut.(press the sleep shortcut again during sleep to terminate sleep).
+- When an external monitor is connected, FN + 4 becomes (off/on) the built-in monitor.(After pressing the sleep button, the display screen changes to the external monitor (the internal screen is turned off); press the sleep button again (the internal display is turned on again).
+- This method is implemented by ACPI patch, and the function is the same as in Windows.
 
 </details>
 
@@ -199,8 +206,8 @@ It would mean a lot to me.
 </details>
 > # Credits
 
+- [@Sniki](https://github.com/Sniki?tab=repositories) 
 - [@benbender](https://github.com/benbender/x1c6-hackintosh/blob/experimental/EFI/OC/dsl/SSDT-BATX.dsl) A new generation of battery patches.
-- [@Sniki](https://github.com/Sniki?tab=repositories) SSDT-IGBE The patch.
 - [@zhen-zen](https://github.com/zhen-zen) for YogaSMC.
 - [daliansky](https://github.com/daliansky/OC-little) for various ACPI hotpatch samples.  
 - [@xzhih](https://github.com/xzhih) for one-key-hidpi.  
