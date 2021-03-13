@@ -1,8 +1,8 @@
 # ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-11.2.2-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -152,10 +152,9 @@
 <summary><strong>睡眠快捷键</strong></summary>
 </br>
 
-- FN + 4：睡眠快捷键。（睡眠过程中再次按下睡眠快捷键即可终止睡眠。）
-- 当连接外部显示器时 FN + 4 变为（关闭/打开）内置显示器。
-（按睡眠按钮后，显示屏幕变为外部显示器（内部屏幕关闭）；再按一次睡眠按钮（内部显示器重新打开）。
-- 此方法通过ACPI补丁实现，功能与Windows中一样。
+- FN + 4：睡眠快捷键。（睡眠过程中再次按下睡眠快捷键即可终止睡眠。此方法通过ACPI补丁实现，功能与Windows中一样。）
+- 在使用电源适配器供电时，如果你连接了接外部显示器 。FN + 4 变为（关闭/打开）内置显示器。
+（按睡眠快捷键后，显示屏幕变为外部显示器（内部屏幕关闭）；再按一次睡眠快捷键（内部显示器重新打开）。
 
 </details>
 

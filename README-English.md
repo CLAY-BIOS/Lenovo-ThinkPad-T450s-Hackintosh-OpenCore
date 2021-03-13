@@ -1,8 +1,8 @@
 # ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="420">
 
-[![macOS](https://img.shields.io/badge/macOS-11.2.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.6-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-11.2.2-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -152,9 +152,10 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 <summary><strong>Sleep shortcut</strong></summary>
 </br>
 
-- FN + 4: Sleep shortcut.(press the sleep shortcut again during sleep to terminate sleep).
-- When an external monitor is connected, FN + 4 becomes (off/on) the built-in monitor.(After pressing the sleep button, the display screen changes to the external monitor (the internal screen is turned off); press the sleep button again (the internal display is turned on again).
-- This method is implemented by ACPI patch, and the function is the same as in Windows.
+-FN + 4: Sleep shortcut key. (During sleep, press the sleep shortcut again to terminate sleep. This method is implemented by ACPI patch, and the function is the same as in Windows.)
+-When using the power adapter to supply power, if you connect an external monitor. FN + 4 becomes (off/on) the built-in display.
+(After pressing the sleep shortcut key, the display screen changes to the external monitor (the internal screen is turned off); press the sleep shortcut key again (the internal display turns on again).
+
 
 </details>
 
