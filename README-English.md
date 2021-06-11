@@ -112,11 +112,11 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 <summary><strong>Known issues⚠️</strong></summary>
 </br>
 
-1.An external 4K monitor needs to unlock the advanced BIOS options to modify the DVMT, but this is difficult to implement and requires a simple method.
-2.Due to DVMT limitation, the maximum resolution is only 2K-60hz. If your screen resolution exceeds 2K-60hz, the screen will be black.
-3.When you sleep with Wi-Fi turned off, Wi-Fi cannot be turned on, and you need to sleep again to turn it on.
-4.The docking graphics interface has no audio output.
-5.Some users reported sleep problems.
+- 1.An external 4K monitor needs to unlock the advanced BIOS options to modify the DVMT, but this is difficult to implement and requires a simple method.
+- 2.Due to DVMT limitation, the maximum resolution is only 2K-60hz. If your screen resolution exceeds 2K-60hz, the screen will be black.
+- 3.When you sleep with Wi-Fi turned off, Wi-Fi cannot be turned on, and you need to sleep again to turn it on.
+- 4.The docking graphics interface has no audio output.
+- 5.Some users reported sleep problems.
 
 </details>
 
