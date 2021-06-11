@@ -1,7 +1,7 @@
-# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.9
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.6.9
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-11.3.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
@@ -21,6 +21,7 @@ It would mean a lot to me.
 - Sound card default Layout-id = 32, earphone noise please use the sound card repair script(ALCPlugFix).
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Support touch screen (With multi-touch and touchscreen gestures).
+- support Big Sur.
 - support Catalina.
 - support Mojave.
 - support docking.
@@ -98,7 +99,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </details>
 
 <details>  
-<summary><strong>What's not working ⚠️</strong></summary>
+<summary><strong>What's not working ❌</strong></summary>
 </br>
 
 - [ ] VGA
@@ -108,11 +109,23 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </details>
 
 <details>  
+<summary><strong>Known issues⚠️</strong></summary>
+</br>
+
+1.An external 4K monitor needs to unlock the advanced BIOS options to modify the DVMT, but this is difficult to implement and requires a simple method.
+2.Due to DVMT limitation, the maximum resolution is only 2K-60hz. If your screen resolution exceeds 2K-60hz, the screen will be black.
+3.When you sleep with Wi-Fi turned off, Wi-Fi cannot be turned on, and you need to sleep again to turn it on.
+4.The docking graphics interface has no audio output.
+5.Some users reported sleep problems.
+
+</details>
+
+<details>  
 <summary><strong>About the Intel Wi-Fi</strong></summary>
 </br>
 
 ### instructions：
-- Use AirportItlwm.kext to drive Intel-WiFi in BigSur.
+- Use AirportItlwm.kext to drive Intel-WiFi in BigSur and Monterey.
 - Use AirPortOpenBSD.kext to drive Intel-WiFi in Catalina and Mojave.
 - Check according to your own system version.
 ![Intel-WiFi](./picture/Intel-WiFi.png)

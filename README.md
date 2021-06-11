@@ -1,7 +1,7 @@
-# ThinkPad T450s X250 T450 X1C3 Big Sur OpenCore 0.6.9
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.6.9
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-11.3.1-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
@@ -21,6 +21,7 @@
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
+- 支持 Big Sur。
 - 支持 Catalina。
 - 支持 Mojave。
 - 支持扩展坞。
@@ -97,7 +98,7 @@
 </details>
 
 <details>  
-<summary><strong>什么不起作用 ⚠️</strong></summary>
+<summary><strong>什么不起作用 ❌</strong></summary>
 </br>
 
 - [ ] VGA
@@ -107,11 +108,23 @@
 </details>
 
 <details>  
+<summary><strong>已知问题⚠️</strong></summary>
+</br>
+
+1.外接4K显示器需要解锁BIOS高级选项修改DVMT，但这实施起来难度较高，需要有一个简单的方法。
+2.因为DVMT限制，最大分辨率只有2K-60hz，如果你的屏幕分辨率超过了2K-60hz，那么将会黑屏。
+3.在关闭WI-FI的情况下进行睡眠，Wi-Fi无法打开，需要再进行一次睡眠才可以打开。
+4.扩展坞图形接口没有音频输出。
+5.部分用户反映了睡眠问题。
+
+</details>
+
+<details>  
 <summary><strong>关于Intel Wi-Fi</strong></summary>
 </br>
 
 ### 说明：
-- 在BigSur中使用AirportItlwm.kext来驱动Intel-WiFi。
+- 在BigSur和Monterey中使用AirportItlwm.kext来驱动Intel-WiFi。
 - 在Catalina和Mojave中使用AirPortOpenBSD.kext来驱动Intel-WiFi。
 - 根据自己的系统版本勾选。
 ![Intel-WiFi](./picture/Intel-WiFi.png)

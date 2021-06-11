@@ -2048,7 +2048,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Name</key>
 				<string>Linux</string>
 				<key>Path</key>
@@ -2185,7 +2185,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v rtsx_sleep_wake_delay_ms=1000</string>
+				<string>-v rtsx_sleep_wake_delay_ms=1000 -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>booter-fileset-kernel</key>
