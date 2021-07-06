@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.0
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.1
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -25,6 +25,7 @@ It would mean a lot to me.
 - support Catalina.
 - support Mojave.
 - support docking.
+- support Sidecar
 This repository is available for all ThinkPads using 5th generation CPUs (Broadwell). The confirmed supported models are shown below
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd.
 
@@ -95,6 +96,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 - [x] Docking DisplayPort
 - [x] Docking DVI
 - [x] Docking HDMI
+- [x] Sidecar
 
 </details>
 
@@ -103,7 +105,6 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </br>
 
 - [ ] VGA
-- [ ] Sidecar
 - [ ] The fingerprint
 
 </details>
@@ -187,6 +188,16 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </br>
 
 1. reference:   https://github.com/xzhih/one-key-hidpi
+
+</details>
+
+</details>
+
+<details>  
+<summary><strong>Sidecar</strong></summary>
+</br>
+
+![Sidecar-1](./picture/Sidecar-1.png)
 
 </details>
 
