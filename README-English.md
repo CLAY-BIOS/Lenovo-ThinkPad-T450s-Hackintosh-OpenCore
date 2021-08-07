@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.1
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.2
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.1-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.2-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -37,7 +37,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 
 - sound card：ALC292
 
-- Wireless network card：DW1820A  Intel 7265AC   Intel AX200
+- Wireless network card：DW1820A  Intel 7265AC   Intel AX200   BCM943224  
 ```
 ## Installation
 
@@ -126,9 +126,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </br>
 
 ### instructions：
-- Use AirportItlwm.kext to drive Intel-WiFi in BigSur and Monterey.
-- Use AirPortOpenBSD.kext to drive Intel-WiFi in Catalina and Mojave.
-- Check according to your own system version.
+- Select this option in the config file according to your system version, default is BigSur.
 ![Intel-WiFi](./picture/Intel-WiFi.png)
 </details>
 
