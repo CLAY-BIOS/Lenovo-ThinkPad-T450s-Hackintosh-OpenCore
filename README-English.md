@@ -242,5 +242,6 @@ The greatest thank you and appreciation to the [Acidanthera](https://github.com/
 
 Questions are welcome, but please don't ask too low - level questions.
 
-
-
+# Reviler(unforgivable)：
+- [@Cxistiro](https://github.com/Cxistiro)
+- Conduct personal attacks and insults in [#53](https://github.com/CLAY-BIOS/Lenovo-ThinkPad-T450s-Hackintosh-OpenCore/issues/53).

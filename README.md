@@ -240,4 +240,6 @@
 
 欢迎提问，但请不要问太低级的问题。
 
-
+# 辱骂者(不可原谅的)：
+- [@Cxistiro](https://github.com/Cxistiro)
+- 在[#53](https://github.com/CLAY-BIOS/Lenovo-ThinkPad-T450s-Hackintosh-OpenCore/issues/53)中进行人身攻击和侮辱。
