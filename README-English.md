@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.2
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.3
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.2-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.3-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -241,7 +241,3 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 The greatest thank you and appreciation to the [Acidanthera](https://github.com/acidanthera) team.
 
 Questions are welcome, but please don't ask too low - level questions.
-
-# Reviler(unforgivable)：
-- [@Cxistiro](https://github.com/Cxistiro)
-- Conduct personal attacks and insults in [#53](https://github.com/CLAY-BIOS/Lenovo-ThinkPad-T450s-Hackintosh-OpenCore/issues/53).

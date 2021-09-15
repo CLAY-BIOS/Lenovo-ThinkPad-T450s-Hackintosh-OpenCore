@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.2
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.3
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.2-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.3-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -239,7 +239,3 @@
 非常感谢 [Acidanthera](https://github.com/acidanthera) 团队，如果没有他们的工作，这将是不可能的。
 
 欢迎提问，但请不要问太低级的问题。
-
-# 辱骂者(不可原谅的)：
-- [@Cxistiro](https://github.com/Cxistiro)
-- 在[#53](https://github.com/CLAY-BIOS/Lenovo-ThinkPad-T450s-Hackintosh-OpenCore/issues/53)中进行人身攻击和侮辱。
