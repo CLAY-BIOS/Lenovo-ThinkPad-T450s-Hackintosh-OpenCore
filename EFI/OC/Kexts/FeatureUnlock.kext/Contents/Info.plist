@@ -7,23 +7,23 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>SidecarFixup</string>
+	<string>FeatureUnlock</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.khronokernel.SidecarFixup</string>
+	<string>com.khronokernel.FeatureUnlock</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SidecarFixup</string>
+	<string>FeatureUnlock</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,14 +42,14 @@
 	<string>12B45b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>SidecarFixup</key>
+		<key>FeatureUnlock</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.khronokernel.SidecarFixup</string>
+			<string>com.khronokernel.FeatureUnlock</string>
 			<key>IOClass</key>
-			<string>SidecarFixup</string>
+			<string>FeatureUnlock</string>
 			<key>IOMatchCategory</key>
-			<string>SidecarFixup</string>
+			<string>FeatureUnlock</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>IOResourceMatch</key>

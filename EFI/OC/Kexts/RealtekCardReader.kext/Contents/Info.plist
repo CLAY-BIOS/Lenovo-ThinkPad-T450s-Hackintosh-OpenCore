@@ -158,7 +158,7 @@
 			<key>CFBundleIdentifier</key>
 			<string>science.firewolf.rtsx</string>
 			<key>IOClass</key>
-			<string>RealtekRTS5249Controller</string>
+			<string>RealtekRTS5227Controller</string>
 			<key>IOPCIMatch</key>
 			<string>0x522710EC</string>
 			<key>IOProbeScore</key>

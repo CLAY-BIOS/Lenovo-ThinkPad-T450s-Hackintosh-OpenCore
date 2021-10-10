@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.3
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.4
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.3-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -237,6 +237,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 - [@cholonam](https://github.com/cholonam/Sinetek-rtsx) [Card reader fix](https://github.com/cholonam/Sinetek-rtsx/pull/18)
 - [@MSzturc](https://github.com/MSzturc/ThinkpadAssistant) for ThinkpadAssistant.
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) Intel Wi-Fi Drivers for macOS.
+- [@0xFireWolf](https://github.com/0xFireWolf/RealtekCardReader) Card reader driver。
 
 The greatest thank you and appreciation to the [Acidanthera](https://github.com/acidanthera) team.
 
