@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.4
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.5
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.5-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -25,9 +25,10 @@ It would mean a lot to me.
 - support Catalina.
 - support Mojave.
 - support docking.
-- support Sidecar
-This repository is available for all ThinkPads using 5th generation CPUs (Broadwell). The confirmed supported models are shown below
+- support Sidecar.
+- This repository is available for all ThinkPads using 5th generation CPUs (Broadwell). The confirmed supported models are shown below.
 - support ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd.
+- Note: The 4th generation CPU (Haswell) is not in the scope of support. ThinkPad has never officially launched the 4th generation CPU (Haswell) T450, T450s, X250, X1C3, which are essentially T440, T440s, X240, X1C2.
 
 ## Hardware information
 ```  
@@ -37,7 +38,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 
 - sound card：ALC292
 
-- Wireless network card：DW1820A  Intel 7265AC   Intel AX200   BCM943224  
+- Wireless network card：DW1820A  Intel7265AC IntelAX200  BCM943224  BCM94360Z3  BCM94360Z4   
 ```
 ## Installation
 
@@ -88,7 +89,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 - [x] The trackpad, the little red dot, and the physical button 
 - [x] Support touch screen      (With multi-touch and touchscreen gestures)
 - [x] mini DisplayPort
-- [x] SD card reader    (Fixed by modifying the source code of [Sinetek-rtsx.kext](https://github.com/cholonam/Sinetek-rtsx/pull/18), for which I studied IOKit for a while)
+- [x] SD card reader    
 - [x] Docking USB
 - [x] Docking Ethernet
 - [x] Docking Audio     ( Set layout-id of sound card to 55. )
@@ -126,7 +127,7 @@ This repository is available for all ThinkPads using 5th generation CPUs (Broadw
 </br>
 
 ### instructions：
-- Select this option in the config file according to your system version, default is BigSur.
+- Select this option in the config file according to your system version, default is Monterey.
 ![Intel-WiFi](./picture/Intel-WiFi.png)
 </details>
 

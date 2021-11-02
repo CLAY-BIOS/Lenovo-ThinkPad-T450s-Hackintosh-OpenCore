@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.4
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.5
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.5-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -28,6 +28,7 @@
 - 支持 Sidecar
 - 此仓库可适用于所有使用第五代CPU（Broadwell）的ThinkPad，已经确认支持的型号如下：
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
+- 注意：4代CPU(Haswell)不在支持的范围内，ThinkPad官方从未推出过4代CPU(Haswell)的T450、T450s、X250、X1C3，其本质上是T440、T440s、X240、X1C2。
 
 ## 硬件信息
 ```  
@@ -37,7 +38,7 @@
 
 - 声卡：ALC292
 
-- 无线网卡：DW1820A   Intel 7265AC   Intel AX200   BCM943224
+- 无线网卡：DW1820A  Intel7265AC IntelAX200  BCM943224  BCM94360Z3  BCM94360Z4 
 ```
 ## 安装和BIOS设置
 
@@ -87,7 +88,7 @@
 - [x] 触控板、小红点和物理按钮      
 - [x] 触摸屏 （带有多点触控和触屏手势）
 - [x] mini DisplayPort
-- [x] SD卡读卡器    （通过修改[Sinetek-rtsx.kext源代码](https://github.com/cholonam/Sinetek-rtsx/pull/18)来修复，为此我学习了一段时间的IOKit.）
+- [x] SD卡读卡器
 - [x] 扩展坞 USB
 - [x] 扩展坞 以太网
 - [x] 扩展坞 耳机插孔 （需要将声卡 layout-id 设置为 55 ）
@@ -125,7 +126,7 @@
 </br>
 
 ### 说明：
-- 在config文件中根据自己的系统版本勾选，默认为BigSur。
+- 在config文件中根据自己的系统版本勾选，默认为Monterey。
 ![Intel-WiFi](./picture/Intel-WiFi.png)
 
 </details>
