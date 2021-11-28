@@ -1,2 +1,2 @@
-# cd To the current directory
-# perform ./install.sh
+# cd into this directory
+# Run ./install.sh in the terminal
