@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.6
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.6-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.7-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -25,7 +25,7 @@ It would mean a lot to me.
 - Catalina support.
 - Mojave support.
 - Docking support.
-- Sidecar support.
+- Sidecar support (Sidecar may cause system instability. Sidecar is disabled by default).
 - This EFI (and other applications) works for all ThinkPads using 5th generation CPUs (Broadwell). Confirmed supported models are shown below.
 - support ThinkPad X250, T450, T450s, X1 Carbon 3rd.
 - Note: The 4th generation CPU (Haswell) is not supported. ThinkPad has never officially launched the 4th generation CPU (Haswell) T450, T450s, X250, X1C3, which are essentially T440, T440s, X240, X1C2.
@@ -98,7 +98,7 @@ It would mean a lot to me.
 - [x] Docking DisplayPort
 - [x] Docking DVI
 - [x] Docking HDMI
-- [x] Sidecar
+- [x] Sidecar (Sidecar may cause system instability. Sidecar is disabled by default.)
 
 </details>
 

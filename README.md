@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.6
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.7
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
 [![macOS](https://img.shields.io/badge/macOS-12.0-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.6-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.7-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -25,7 +25,7 @@
 - 支持 Catalina。
 - 支持 Mojave。
 - 支持扩展坞。
-- 支持 Sidecar
+- 支持 Sidecar (开启Sidecar可能导致系统不稳定，默认为关闭状态)。
 - 此仓库可适用于所有使用第五代CPU（Broadwell）的ThinkPad，已经确认支持的型号如下：
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
 - 注意：4代CPU(Haswell)不在支持的范围内，ThinkPad官方从未推出过4代CPU(Haswell)的T450、T450s、X250、X1C3，其本质上是T440、T440s、X240、X1C2。
@@ -96,7 +96,7 @@
 - [x] 扩展坞 DisplayPort
 - [x] 扩展坞 DVI
 - [x] 扩展坞 HDMI
-- [x] Sidecar
+- [x] Sidecar (开启Sidecar可能导致系统不稳定，默认为关闭状态)。
 
 </details>
 
