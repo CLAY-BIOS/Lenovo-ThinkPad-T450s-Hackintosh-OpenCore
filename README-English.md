@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.8
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.9
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-12.2-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.8-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-12.3-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.9-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **DISCLAIMER:**
@@ -21,11 +21,12 @@ It would mean a lot to me.
 - Sound card default Layout-id = 32, if you hear noise upon connecting headphones, use the sound card repair script (ALCPlugFix), found in this repository.
 - If you want to use the audio interface on the Docking, set the layout-id of the sound card to 55 and select the line output.
 - Touchscreen support (With multi-touch and touchscreen gestures).
+- Monterey support.
 - Big Sur support.
 - Catalina support.
 - Mojave support.
 - Docking support.
-- Sidecar support (Sidecar may cause system instability. Sidecar is disabled by default).
+- Sidecar support (Turning on sidecar will cause the system to freeze randomly, Sidecar is disabled by default).
 - This EFI (and other applications) works for all ThinkPads using 5th generation CPUs (Broadwell). Confirmed supported models are shown below.
 - support ThinkPad X250, T450, T450s, X1 Carbon 3rd.
 - Note: The 4th generation CPU (Haswell) is not supported. ThinkPad has never officially launched the 4th generation CPU (Haswell) T450, T450s, X250, X1C3, which are essentially T440, T440s, X240, X1C2.
@@ -119,7 +120,22 @@ It would mean a lot to me.
 2. Due to DVMT limitation, the maximum resolution is only 2K-60hz. If your screen resolution exceeds 2K-60hz, the screen will be black.
 3. When you sleep with Wi-Fi turned off, Wi-Fi cannot be turned on, and you need to sleep again to turn it on.
 4. The docking graphics interface has no audio output.
-5. Some users reported sleep problems.
+5. Turning on sidecar will cause the system to freeze randomly.
+6. the ThinkPad X1 carbon 3rd docking station cannot use the Ethernet interface because there is no corresponding driver support in the MacOS.
+7. In MacOS Monterey, the Airdrop can only receive but not send.
+8. There are some problems with Bluetooth in MacOS Monterey, and there is no solution at present.
+
+</details>
+
+<details>  
+<summary><strong>About Bluetooth</strong></summary>
+</br>
+
+- 1.Because Apple modified the Bluetooth stack in MacOS Monterey, Bluetooth cannot be used normally in MacOS Monterey.
+- 2.In MacOS Monterey, use brcmbluetoothinjector.kext + BlueToolFixup.Kext to drive brcm Bluetooth.
+- 3.In MacOS Monterey, use IntelBluetoothfirmware.kext + BlueToolFixup. Kext to drive Intel Bluetooth.
+- 4.Even if Bluetooth is driven in MacOS Monterey, only some functions can be used.
+- 5.reference resources:https://github.com/acidanthera/bugtracker/issues/1821
 
 </details>
 
@@ -136,10 +152,11 @@ It would mean a lot to me.
 <summary><strong>Docking</strong></summary>
 </br>
 
+- Note⚠️: the ThinkPad X1 carbon 3rd docking(DU9026S1) station cannot use the Ethernet interface because there is no corresponding driver support in the MacOS.
+- ThinkPad X250 ThinkPad T450 ThinkPad T450s docking(40A1、40A2) station can be used normally.
 - Use of docking can cause sleep problems, the solution is to add SSDT-IGBE patch to config.plist->ACPI.
 - Flap mode cannot be used with SSDT-IGBE patch.
 - Up to three displays (including the built-in display) 
-- The docking station is perfectly adapted, but some testing is needed. 
 ![Docking](./picture/Docking.png)
 
 </details>

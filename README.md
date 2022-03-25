@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.8
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.9
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-12.2-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.8-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-12.3-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.9-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -21,11 +21,12 @@
 - 声卡默认 layout-id = 32，耳机杂音请使用声卡修复脚本(ALCPlugFix)。 
 - 如果你想使用扩展坞上的音频接口，请将声卡 layout-id 设置为 55 ，选择线路输出。
 - 支持触摸屏（带有多点触控和触屏手势）。
+- 支持 Monterey。
 - 支持 Big Sur。
 - 支持 Catalina。
 - 支持 Mojave。
 - 支持扩展坞。
-- 支持 Sidecar (开启Sidecar可能导致系统不稳定，默认为关闭状态)。
+- 支持 Sidecar (开启Sidecar会导致系统随机冻结，默认为关闭状态)。
 - 此仓库可适用于所有使用第五代CPU（Broadwell）的ThinkPad，已经确认支持的型号如下：
 - 支持 ThinkPad X250 ThinkPad T450 ThinkPad T450s ThinkPad X1 Carbon 3rd。
 - 注意：4代CPU(Haswell)不在支持的范围内，ThinkPad官方从未推出过4代CPU(Haswell)的T450、T450s、X250、X1C3，其本质上是T440、T440s、X240、X1C2。
@@ -117,7 +118,22 @@
 - 2.因为DVMT限制，最大分辨率只有2K-60hz，如果你的屏幕分辨率超过了2K-60hz，那么将会黑屏。
 - 3.在关闭WI-FI的情况下进行睡眠，Wi-Fi无法打开，需要再进行一次睡眠才可以打开。
 - 4.扩展坞图形接口没有音频输出。
-- 5.部分用户反映了睡眠问题。
+- 5.开启Sidecar会导致系统随机冻结。
+- 6.ThinkPad X1 Carbon 3rd 的扩展坞无法使用以太网接口，因为macOS中没用对应的驱动程序支持。
+- 7.在macOS Monterey中隔空投送只能接收不能发送。
+- 8.在macOS Monterey中蓝牙存在一些问题，目前还没有解决方法。
+
+</details>
+
+<details>  
+<summary><strong>关于蓝牙</strong></summary>
+</br>
+
+- 1.因为Apple修改了macOS Monterey 中蓝牙堆栈，导致在macOS Monterey中蓝牙无法正常使用。
+- 2.在macOS Monterey中请使用 BrcmBluetoothInjector.kext + BlueToolFixup.kext 来驱动Brcm蓝牙。
+- 3.在macOS Monterey中请使用 IntelBluetoothFirmware.kext + BlueToolFixup.kext 来驱动Intel蓝牙。
+- 4.即使在macOS Monterey中驱动了蓝牙也只能使用部分功能。
+- 5.参考：https://github.com/acidanthera/bugtracker/issues/1821
 
 </details>
 
@@ -135,10 +151,11 @@
 <summary><strong>关于扩展坞</strong></summary>
 </br>
 
+_ 注意⚠️：ThinkPad X1 Carbon 3rd 的扩展坞（DU9026S1）无法使用以太网接口，因为macOS中没用对应的驱动程序支持。
+- ThinkPad X250 ThinkPad T450 ThinkPad T450s的扩展坞（40A1、40A2）可以正常使用。
 - 使用扩展坞会导致睡眠出现问题，解决方法是在 config.plist->ACPI 中勾选 SSDT-IGBE 补丁。
 - 使用 SSDT-IGBE 补丁无法使用翻盖模式。
 - 最多可同时连接三台显示器（包括内置显示器）。
-- 扩展坞已完美适配，但还需要一些测试。
 ![Docking](./picture/Docking.png)
 
 </details>
