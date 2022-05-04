@@ -1,8 +1,8 @@
-# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.7.9
+# ThinkPad T450s X250 T450 X1C3 Monterey OpenCore 0.8.0
 <img align="right" src="/picture/Thismachine.png" alt="Lenovo Thinkpad T450s macOS Hackintosh OpenCore" width="400">
 
-[![macOS](https://img.shields.io/badge/macOS-12.3-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.9-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-12.4-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.0-green)](https://github.com/acidanthera/OpenCorePkg)
 [![ThinkPad](https://img.shields.io/badge/ThinkPad-T450s.X250.T450.X1C3-orange)](https://think.lenovo.com.cn/index.html)
 
 **免责声明:**
@@ -39,7 +39,9 @@
 
 - 声卡：ALC292
 
-- 无线网卡：DW1820A  Intel7265AC IntelAX200  BCM943224  BCM94360Z3  BCM94360Z4 
+- 无线网卡：DW1820A Intel7265AC IntelAX200 BCM943224 BCM94360Z3 BCM94360Z4 BCM94360CD BCM94360CS2
+
+- 注意⚠️：对于ThinkPad X250、T450、T450s，苹果网卡只有BCM94360CD能在WIN10中被正常驱动，其它苹果网卡在WIN10中无法搜索到任何信号。
 ```
 ## 安装和BIOS设置
 
